@@ -130,5 +130,18 @@ sleep 1
 echo "     Rebooting System in 1 seconds"
 sleep 1
 echo "     Rebooting System in 0 seconds"
-
-#sudo reboot
+sleep 1
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     ALL DONE - Rebooting System..."
+echo "     SUPER + ENTER = Terminal"
+echo "     SUPER + R = Run menu"
+echo " "
+echo "     if you are a virtual machine and can not use SUPER KEY"
+echo "     press CTRL + C to stop and edit the file"
+echo "     nano .config/sxhkd/sxhkdrc"
+echo " "
+echo "     And then you are ready to reboot, sudo reboot"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+sleep 1
+sudo reboot
