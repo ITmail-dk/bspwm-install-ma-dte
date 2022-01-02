@@ -19,7 +19,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
-cp -r ~/bspwm-install-ma-dte/fonts/DejaVu-Sans-Mono-Nerd-Font-Complete.ttf ~/.fonts/
+cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 
 #chmod +x files.
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -72,18 +72,23 @@ cd ~
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
-echo "     ALL DONE - Press [Enter] to Rebooting System..."
+echo "     ALL DONE - Press [Enter] to Rebooting System."
 echo "     SUPER + ENTER = Terminal"
 echo "     SUPER + R = Run menu"
 echo "     SUPER + E = File Manager"
 echo " "
+echo "     ZSH Setup Guide... is launching now..."
+echo " "
 echo "     If you are in a virtual machine and can not use SUPER KEY"
-echo "     press CTRL + C to stop and edit the file"
+echo "     press CTRL + C to stop and edit the file."
+echo " "
 echo "     nano .config/sxhkd/sxhkdrc"
 echo " "
 echo "     And then you are ready to reboot, sudo reboot"
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-read -p "Press [Enter] key to continue..."
+zsh
+
+read -p "Press [Enter] key to Reboot System."
 echo "You are ready to reboot..."
 #sudo reboot
