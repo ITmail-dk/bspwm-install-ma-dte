@@ -21,8 +21,6 @@ cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 cp -r ~/bspwm-install-ma-dte/fonts/DejaVu-Sans-Mono-Nerd-Font-Complete.ttf ~/.fonts/
 
-
-
 #chmod +x files.
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
@@ -48,7 +46,11 @@ echo "     apt install Basic Software & Packages"
 echo " "
 echo "     Enter your user password, to continue if necessary"
 echo " "
+echo "     continues the software installation in 3 seconds"
+echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+sleep 3
 
 sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar network-manager kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm firefox-esr
 
