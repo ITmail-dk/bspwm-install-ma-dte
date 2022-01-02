@@ -28,7 +28,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 
-# Auto Start
+# Automatically start up programs
 picom &
 nitrogen --restore &
 pulseaudio --kill &
