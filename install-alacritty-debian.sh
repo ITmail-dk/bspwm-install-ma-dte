@@ -3,8 +3,7 @@
 #APT UPDATE & APT UPGRADE
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
-echo "     APT UPDATE & APT UPGRADE"
-echo " "
+echo "     APT + Alacritty - Building and installing"
 echo "     Enter your user password, to continue."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -19,7 +18,6 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 mkdir ~/.config/alacritty
 mkdir ~/make
-mkdir ~/make/alacritty
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
@@ -27,9 +25,10 @@ echo "     GIT Download."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
+cd ~/make/
 git clone https://github.com/alacritty/alacritty.git
 mv alacritty ~/make/
-cd make/alacritty
+cd ~/make/alacritty
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "

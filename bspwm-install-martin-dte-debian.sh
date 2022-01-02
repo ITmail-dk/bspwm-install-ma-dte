@@ -31,6 +31,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/sxhkd/sxhkdrc
 
 chmod +x ~/.config/polybar/run-polybar.sh
+chmod +x ~/.config/rofi/rofi-beats
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
@@ -96,7 +97,7 @@ echo "     Alacritty - Building and installing"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-. install-alacritty-debian
+. ~/bspwm-install-ma-dte/install-alacritty-debian
 
 cd ~
 
