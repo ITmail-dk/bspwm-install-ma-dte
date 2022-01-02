@@ -84,6 +84,6 @@ echo " "
 echo "     And then you are ready to reboot, sudo reboot"
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-pause 'Press [Enter] key to continue...'
-
-sudo reboot
+read -p "Press [Enter] key to continue..."
+echo "You are ready to reboot..."
+#sudo reboot
