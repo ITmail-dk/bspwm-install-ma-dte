@@ -11,7 +11,9 @@ Debian Install ISO - Non-free Firmware download link.:
 
 https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
 
+## Remember to install Debian without the desktop environment.
+After installation, Reboot the computer and login with your new user.
 
-### Run this Command line:
+### Run this Command line to install everything:
 
 sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && cd bspwm-install-ma-dte && . bspwm-install-martin-dte-debian.sh
