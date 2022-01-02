@@ -97,7 +97,7 @@ echo "     Alacritty - Building and installing"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-. ~/bspwm-install-ma-dte/install-alacritty-debian
+. ~/bspwm-install-ma-dte/install-alacritty-debian.sh
 
 cd ~
 
