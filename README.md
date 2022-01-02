@@ -5,9 +5,9 @@ An easy way to get up and running quickly in this BSPwm desktop environment plus
 ## Debian Linux - Git + Install
 Start the installation as regular users with SUDO rights from your home directory
 
-Debian Install ISO - Non-free Firmware.: 
+Debian Install ISO - Non-free Firmware download link.: 
 https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
 
 Run this Command line:
 
-cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && cd bspwm-install-ma-dte && . bspwm-install-martin-dte-debian.sh
+sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && cd bspwm-install-ma-dte && . bspwm-install-martin-dte-debian.sh
