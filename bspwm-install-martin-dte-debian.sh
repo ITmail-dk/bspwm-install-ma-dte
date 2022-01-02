@@ -17,9 +17,9 @@ echo "     Copy files to..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-cp -r ~/bspwm-install-martin-dte/config/* ~/.config
-cp -r ~/bspwm-install-martin-dte/wallpapers/* ~/wallpapers
-cp -r ~/bspwm-install-martin-dte/fonts/DejaVu-Sans-Mono-Nerd-Font-Complete.ttf ~/.fonts
+cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
+cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
+cp -r ~/bspwm-install-ma-dte/fonts/DejaVu-Sans-Mono-Nerd-Font-Complete.ttf ~/.fonts/
 
 
 
@@ -55,15 +55,36 @@ sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     apt install User Software"
-echo "     List: inkscape gimp rawtherapee darktable okular"
-echo "     if you do not want to install this software you can "
+echo "     List: inkscape gimp rawtherapee darktable okular alacritty"
+echo " "
+echo "     If you do not want to install this software you can "
 echo "     press CTRL + C and then you are done ready to reboot"
 echo " "
 echo "     Enter your user password, to continue if necessary"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-
-sleep 15
+sleep 1
+echo "     continues the software installation in 10 seconds"
+sleep 1
+echo "     continues the software installation in 9 seconds"
+sleep 1
+echo "     continues the software installation in 8 seconds"
+sleep 1
+echo "     continues the software installation in 7 seconds"
+sleep 1
+echo "     continues the software installation in 6 seconds"
+sleep 1
+echo "     continues the software installation in 5 seconds"
+sleep 1
+echo "     continues the software installation in 4 seconds"
+sleep 1
+echo "     continues the software installation in 3 seconds"
+sleep 1
+echo "     continues the software installation in 2 seconds"
+sleep 1
+echo "     continues the software installation in 1 seconds"
+sleep 1
+echo "     continues the software installation in 0 seconds"
 
 sudo apt install -y inkscape gimp rawtherapee darktable okular
 
@@ -74,6 +95,8 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 . install-alacritty-debian
+
+cd ~
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
