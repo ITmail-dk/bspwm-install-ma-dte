@@ -63,6 +63,8 @@ echo "     Enter your user password, to continue if necessary"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
+sleep 15
+
 sudo apt install -y inkscape gimp rawtherapee darktable okular
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
