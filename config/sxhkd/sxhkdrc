@@ -27,14 +27,11 @@ super + shift + b
 super + e
 	thunar
 
-super + alt + ctrl + n
-	thunar smb://192.168.18.10/
-
 super + alt + ctrl + a
 	kitty -e pulsemixer
 
 super + alt + ctrl + m
-	. ~/.config/rofi/rofi-beats/rofi-beats
+	. ~/.config/rofi/rofi-beats
 
 #
 # BSPwm Hotkeys
