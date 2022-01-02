@@ -1,4 +1,4 @@
-# This is a test / start of the project and not 100% tested yet... so there may be small errors
+# This is a test / start of the project and not 100% tested yet... so there may be small errors.
 
 
 # BSPwm Install - Martin Desktop Environment

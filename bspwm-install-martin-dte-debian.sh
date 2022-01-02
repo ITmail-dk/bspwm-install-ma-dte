@@ -7,7 +7,7 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 mkdir ~/.config
 mkdir ~/.fonts
-mkdir ~/wallpapers/
+mkdir ~/wallpapers
 
 
 #Copy files to...
@@ -17,9 +17,9 @@ echo "     Copy files to..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-cp -r /config/* ~/.config
-cp -r /wallpapers/* ~/wallpapers
-cp -r /fonts/DejaVu-Sans-Mono-Nerd-Font-Complete.ttf ~/.fonts
+cp -r ~/bspwm-install-martin-dte/config/* ~/.config
+cp -r ~/bspwm-install-martin-dte/wallpapers/* ~/wallpapers
+cp -r ~/bspwm-install-martin-dte/fonts/DejaVu-Sans-Mono-Nerd-Font-Complete.ttf ~/.fonts
 
 
 
