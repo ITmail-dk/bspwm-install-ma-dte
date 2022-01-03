@@ -11,6 +11,10 @@ Debian Install ISO - Non-free Firmware download link.:
 
 https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/firmware-testing-amd64-netinst.iso
 
+### Ventoy - Create one bootable USB, with multiple ISO files on it.
+Just copy multiple ISO files to the USB drive and boot them directly, It's just such a great tool.
+Link.: https://www.ventoy.net/en/index.html
+
 ## Remember to install Debian without the desktop environment.
 After installation, Reboot the computer and login with your new user.
 
