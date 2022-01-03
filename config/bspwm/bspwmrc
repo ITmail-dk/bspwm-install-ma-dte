@@ -30,6 +30,7 @@ bspc rule -a Screenkey manage=off
 
 # Automatically start up programs
 picom &
+feh --bg-fill ~/wallpapers/wallpaper.jpg &
 nitrogen --restore &
 pulseaudio --kill &
 sleep 2
