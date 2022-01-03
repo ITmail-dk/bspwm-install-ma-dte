@@ -1,7 +1,7 @@
 ### This is a test / start of the project and not 100% tested yet... so there may be small errors... So wait until this warning is gone before you try it, So you know at least that it works ;-)
 
 # BSPwm Install - Martin Desktop Environment
-An easy way to get up and running quickly in this BSPwm desktop environment plus some standard programs such as polybar and keybindings... the recipe here is to move on once you have installed a base operating system, there are different versions for different systems see description.
+An easy and quickly way to get up and running in the BSPwm desktop environment plus keybindings and some standard software such as polybar, pulseaudio, Google Chrome, firefox, nitrogen ... the recipe here is to move on once you have installed a base operating system, there are different versions for different systems see description.
 
 
 ## Debian Linux - Git + Install
