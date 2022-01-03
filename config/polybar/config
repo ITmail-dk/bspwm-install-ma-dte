@@ -35,6 +35,8 @@ foreground-alt = #555
 primary = #035a99
 secondary = #0d4f8c
 alert = #e31b37
+c1 = #fafafa
+c2 = #484c4f
 
 [bar/bspwmbar]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -176,8 +178,8 @@ card = intel_backlight
 type = internal/cpu
 interval = 3
 format-prefix = "   "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
+format-prefix-foreground = ${colors.c1}
+format-underline = ${colors.c2}
 label = %percentage:2%%
 
 [module/memory]
