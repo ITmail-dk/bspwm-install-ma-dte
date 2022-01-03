@@ -60,7 +60,7 @@ sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
 
-# More Software, Packages & Programs ON / OFF
+# More Software & Packages ON / OFF
 #sudo apt install -y inkscape gimp rawtherapee darktable okular
 
 
