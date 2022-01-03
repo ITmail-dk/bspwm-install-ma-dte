@@ -16,4 +16,4 @@ After installation, Reboot the computer and login with your new user.
 
 ### Run this Command line to install everything:
 
-sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && cd bspwm-install-ma-dte && . bspwm-install-martin-dte-debian.sh
+sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && . /bspwm-install-ma-dte/bspwm-install-martin-dte-debian.sh
