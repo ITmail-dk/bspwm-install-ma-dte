@@ -72,7 +72,7 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 sudo apt update
-sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar network-manager dialog zsh kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver firefox-esr
+sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar network-manager zsh kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver firefox-esr
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
@@ -133,7 +133,7 @@ echo "The last step of the installation"
 read -p "Troubleshooting - Press a key to continue the installation."
 
 
-. ~/bspwm-install-ma-dte/setup-menu.sh
+. last-step-setup-menu.sh
 
 # Clean up and delete folders and other installation files
 #cd ~
