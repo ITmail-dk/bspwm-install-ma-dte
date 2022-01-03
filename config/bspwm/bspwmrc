@@ -3,15 +3,18 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
-xrandr -s 1920x1080 &
+#xrandr -s 1920x1080 &
 
 bspc config border_width 1
-bspc config window_gap 5
+bspc config window_gap 7
 
-bspc config split_ratio          0.50
+bspc config split_ratio     0.50
+bspc config top_padding     31
+
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config top_padding		 31
+bspc config remove_unplugged_monitors   true
+bspc config remove_disabled_monitors    true
 
 bspc config normal_border_color 	"#111212"
 bspc config active_border_color 	"#006796"
@@ -19,11 +22,24 @@ bspc config focused_border_color 	"#FF000000"
 
 bspc config focus_follows_pointer true
 bspc config pointer_follows_monitor true
+bspc config click_to_focus false
 
-bspc rule -a Gimp desktop='^8' follow=on layer=above border=off
-bspc rule -a Firefox desktop='^2' follow=on
+# Rule Commands - General Syntax.
+# bspc rule -a, --add (<class_name>|*)[:(<instance_name>|\*)[:(<name>|*)]] 
+# [*-o*|--one-shot] [monitor=MONITOR_SEL|desktop=DESKTOP_SEL|node=NODE_SEL] 
+# [state=STATE] [layer=LAYER] [split_dir=DIR] [split_ratio=RATIO] 
+# [(hidden|sticky|private|locked|marked|center|follow|manage|focus|border)=(on|off)] 
+# [rectangle=WxH+X+Y]
+
+# To Fine CLASS Use xprop on terminal.
+
+# Example # bspc rule -a Google-chrome desktop='^2' follow=on border=off
+
 bspc rule -a Google-chrome desktop='^2' follow=on border=off
+bspc rule -a Firefox desktop='^2' follow=on border=off
+bspc rule -a Gimp desktop='^6' follow=on layer=above border=off
 bspc rule -a mplayer2 state=floating
+bspc rule -a Inkscape desktop='^7' follow=on border=off
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
