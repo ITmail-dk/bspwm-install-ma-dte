@@ -105,9 +105,10 @@ cd ~/bspwm-install-ma-dte/
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 #. copy-vm-keys.sh
-. ~/bspwm-install-ma-dte/setup-menu.sh
+. setup-menu.sh
 
 # Clean up and delete folders and other installation files
+#cd ~
 #rm -r ~/bspwm-install-ma-dte/
 
 read -p "Press [Enter] key to Reboot System."
