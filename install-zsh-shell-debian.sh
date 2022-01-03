@@ -25,3 +25,5 @@ echo $SHELL
 
 # Test with...
 $SHELL --version
+
+read -p "ZSH Shell Install - ALL DONE - Press a key to Exit"
