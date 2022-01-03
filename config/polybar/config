@@ -27,13 +27,13 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #F2272829
-background-alt = #444
+background = #F2151a1c
+background-alt = #151a1c
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
+foreground = #ededed
 foreground-alt = #555
-primary = #07548c
-secondary = #115ea6
+primary = #035a99
+secondary = #0d4f8c
 alert = #e31b37
 
 [bar/bspwmbar]

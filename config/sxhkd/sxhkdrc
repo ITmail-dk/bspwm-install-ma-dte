@@ -4,10 +4,10 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
 
 super + shift + Return
-        kitty
+	alacritty
 
 # program launcher
 super + r

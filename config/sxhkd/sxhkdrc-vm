@@ -4,17 +4,17 @@
 
 # terminal emulator
 alt + Return
-	alacritty
+	kitty
 
 alt + shift + Return
-        kitty
+	alacritty
 
 # program launcher
 alt + r
 	rofi -show run
 
 # make sxhkd reload its configuration files:
-alt + alt + ctrl + Escape
+alt + ctrl + Escape
 	pkill -USR1 -x sxhkd
 
 
@@ -30,7 +30,7 @@ alt + e
 super + alt + ctrl + a
 	kitty -e pulsemixer
 
-super + alt + ctrl + m
+alt + ctrl + m
 	. ~/.config/rofi/rofi-beats
 
 #
@@ -38,7 +38,7 @@ super + alt + ctrl + m
 #
 
 # quit/restart bspwm
-super + alt + ctrl + {q,r}
+shift + alt + ctrl + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill

@@ -57,9 +57,6 @@ sleep 5
 
 sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar network-manager zsh kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver firefox-esr
 
-# Alacritty TEST
-sudo apt install -y librust-alacritty-terminal-dev
-
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
 
@@ -67,7 +64,7 @@ sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.de
 #sudo apt install -y inkscape gimp rawtherapee darktable okular
 
 
-
+# Alacritty - Building and installing ON / OFF
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #echo " "
 #echo "     Alacritty - Building and installing"
@@ -100,8 +97,18 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 cd ~/bspwm-install-ma-dte/
 
 # VM TEST KEY COPY Shall not be included in the published edition.
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "      TEST - VM KEY SET COPY DONE"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
 . copy-vm-keys.sh
+
+# Clean up and delete folders and other installation files
+#rm -r ~/bspwm-install-ma-dte/
 
 read -p "Press [Enter] key to Reboot System."
 echo "You are ready to reboot..."
 sudo reboot
+
