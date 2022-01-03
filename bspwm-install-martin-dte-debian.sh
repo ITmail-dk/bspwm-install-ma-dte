@@ -105,7 +105,7 @@ cd ~/bspwm-install-ma-dte/
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 #. copy-vm-keys.sh
-. setup-menu.sh
+. ~/bspwm-install-ma-dte/setup-menu.sh
 
 # Clean up and delete folders and other installation files
 #cd ~
