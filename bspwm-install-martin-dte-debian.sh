@@ -19,8 +19,16 @@ echo "     SID apt sources.list"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-sudo mv /etc/apt/sources.list ~/bspwm-install-ma-dte/apt/sources.list-backup
-sudo cp ~/bspwm-install-ma-dte/apt/sources.list /etc/apt/sources.list
+sudo sed -i 'deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
+sudo sed -i 'deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
+
+#sudo echo "deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free" >> /etc/apt/sources.list
+#sudo echo "deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free" >> /etc/apt/sources.list
+
+
+
+#sudo mv /etc/apt/sources.list ~/bspwm-install-ma-dte/apt/sources.list-backup
+#sudo cp ~/bspwm-install-ma-dte/apt/sources.list /etc/apt/sources.list
 
 
 #Copy files to...
