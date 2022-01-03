@@ -9,7 +9,7 @@ Start the installation as regular users with SUDO rights from your home director
 
 Debian Install ISO - Non-free Firmware download link.: 
 
-https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/
+https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/firmware-testing-amd64-netinst.iso
 
 ## Remember to install Debian without the desktop environment.
 After installation, Reboot the computer and login with your new user.
