@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/bspwm-install-ma-dte
+
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     Creates folders."
@@ -68,27 +70,27 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 . ~/bspwm-install-ma-dte/install-alacritty-debian.sh
 
-cd ~
-
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     ALL DONE - Press [Enter] to Rebooting System."
+echo "     INFO."
 echo "     SUPER + ENTER = Terminal"
-echo "     SUPER + R = Run menu"
 echo "     SUPER + E = File Manager"
-echo " "
-echo "     ZSH Setup Guide... is launching now..."
+echo "     SUPER + W = Close Program"
+echo "     SUPER + R = Run menu"
 echo " "
 echo "     If you are in a virtual machine and can not use SUPER KEY"
-echo "     press CTRL + C to stop and edit the file."
+echo "     press CTRL + C to stop and run file."
 echo " "
-echo "     nano .config/sxhkd/sxhkdrc"
+echo "     . copy-vm-keys.sh"
+echo "     "
+echo "     It will make your ALT KEY on the keyboard become the SUPER KEY "
+echo "     As long as you are running in a virtual machine then use it."
 echo " "
 echo "     And then you are ready to reboot, sudo reboot"
+echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-
-zsh
 
 read -p "Press [Enter] key to Reboot System."
 echo "You are ready to reboot..."
-#sudo reboot
+sudo reboot

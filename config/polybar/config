@@ -309,7 +309,7 @@ format-charging-underline = #032945
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
@@ -340,7 +340,7 @@ format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
-label = %temperature-c%
+label =   %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
@@ -368,14 +368,14 @@ menu-0-0-exec = menu-open-1
 menu-0-1 = 
 menu-0-1-exec = menu-open-2
 
-menu-1-0 = ﬂ No back
+menu-1-0 = 
 menu-1-0-exec = menu-open-0
 menu-1-1 = 
 menu-1-1-exec = systemctl reboot
 
 menu-2-0 = 
 menu-2-0-exec = systemctl poweroff
-menu-2-1 = ﬂ No back
+menu-2-1 = 
 menu-2-1-exec = menu-open-0
 
 [settings]
