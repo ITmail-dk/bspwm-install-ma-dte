@@ -11,27 +11,13 @@ mkdir ~/.config
 mkdir ~/.fonts
 mkdir ~/wallpapers
 
-#Remove files & copy new.
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-echo " "
-echo "     Move files & copy new."
-echo "     Testing apt sources.list"
-echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-
-sleep 2
-
-#sudo sed -i 'deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
-#sudo sed -i 'deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
+# ADD new apt testing YES / NO
 
 sudo sh -c "echo 'deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 sudo sh -c "echo 'deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 
-sleep 2
-
-#sudo mv /etc/apt/sources.list ~/bspwm-install-ma-dte/apt/sources.list-backup
-#sudo cp ~/bspwm-install-ma-dte/apt/sources.list /etc/apt/sources.list
-
+# Not for production version
+read -p "Troubleshooting - Press a key to continue the installation."
 
 #Copy files to...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -66,6 +52,8 @@ echo "     All DONE - User + .config files..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
+# Not for production version
+read -p "Troubleshooting - Press a key to continue the installation."
 
 # Add ROOT Level - Software & Packages.
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -78,8 +66,6 @@ echo "     continues the software installation in 5 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-sleep 5
-
 sudo apt update
 sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar network-manager dialog zsh kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver firefox
 
@@ -89,6 +75,8 @@ sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.de
 # More Software & Packages ON / OFF
 #sudo apt install -y inkscape gimp rawtherapee darktable okular
 
+# Not for production version
+read -p "Troubleshooting - Press a key to continue the installation."
 
 # Alacritty - Building and installing ON / OFF
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -99,6 +87,9 @@ sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.de
 # Alacritty - Building and installing ON / OFF
 
 #. ~/bspwm-install-ma-dte/install-alacritty-debian.sh
+
+# Not for production version
+read -p "Troubleshooting - Press a key to continue the installation."
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
@@ -121,7 +112,6 @@ echo "     And then you are ready to reboot, sudo reboot"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-cd ~/bspwm-install-ma-dte/
 
 # VM TEST KEY COPY Shall not be included in the published edition.
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -131,6 +121,13 @@ cd ~/bspwm-install-ma-dte/
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 #. copy-vm-keys.sh
+
+# Not for production version
+
+echo "The last step of the installation"
+read -p "Troubleshooting - Press a key to continue the installation."
+
+
 . ~/bspwm-install-ma-dte/setup-menu.sh
 
 # Clean up and delete folders and other installation files
@@ -140,4 +137,3 @@ cd ~/bspwm-install-ma-dte/
 read -p "Press [Enter] key to Reboot System."
 echo "You are ready to reboot..."
 sudo reboot
-
