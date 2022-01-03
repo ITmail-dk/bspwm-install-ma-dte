@@ -19,8 +19,8 @@ echo "     SID apt sources.list"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-rm /etc/apt/sources.list
-cp ~/bspwm-install-ma-dte/apt/sources.list /etc/apt/sources.list
+sudo rm /etc/apt/sources.list
+sudo cp ~/bspwm-install-ma-dte/apt/sources.list /etc/apt/sources.list
 
 
 #Copy files to...
