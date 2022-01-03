@@ -11,6 +11,17 @@ mkdir ~/.config
 mkdir ~/.fonts
 mkdir ~/wallpapers
 
+#Remove files & copy new.
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Remove files & copy new."
+echo "     SID apt sources.list"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+rm /etc/apt/sources.list
+cp ~/bspwm-install-ma-dte/apt/sources.list /etc/apt/sources.list
+
 
 #Copy files to...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -59,7 +70,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 sleep 5
 
-sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar network-manager zsh kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver firefox-esr
+sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar network-manager dialog zsh kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver firefox
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
