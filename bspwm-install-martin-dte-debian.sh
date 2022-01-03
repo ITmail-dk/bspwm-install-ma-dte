@@ -98,13 +98,14 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 cd ~/bspwm-install-ma-dte/
 
 # VM TEST KEY COPY Shall not be included in the published edition.
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-echo " "
-echo "      TEST - VM KEY SET COPY DONE"
-echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo " "
+#echo "      TEST - VM KEY SET COPY DONE"
+#echo " "
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-. copy-vm-keys.sh
+#. copy-vm-keys.sh
+. setup-menu.sh
 
 # Clean up and delete folders and other installation files
 #rm -r ~/bspwm-install-ma-dte/
