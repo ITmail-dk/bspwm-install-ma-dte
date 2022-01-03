@@ -31,7 +31,7 @@ bspc config click_to_focus false
 # [(hidden|sticky|private|locked|marked|center|follow|manage|focus|border)=(on|off)] 
 # [rectangle=WxH+X+Y]
 
-# To Fine CLASS Use xprop on terminal.
+# To Fine <class_name> Use xprop on terminal.
 
 # Example # bspc rule -a Google-chrome desktop='^2' follow=on border=off
 
@@ -44,7 +44,7 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 
-# Automatically start up programs
+# Automatically start up programs.
 picom &
 feh --bg-fill ~/wallpapers/default-wallpaper.jpg &
 nitrogen --restore &
