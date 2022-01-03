@@ -23,6 +23,10 @@ cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 
+# Echo til config files
+echo "dirs=$HOME/wallpapers;" >> $HOME/.config/nitrogen/nitrogen.cfg
+
+
 #chmod +x files.
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
