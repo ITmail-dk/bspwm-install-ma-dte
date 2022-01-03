@@ -45,7 +45,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 # Add ROOT Level - Software & Packages.
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
-echo "     APT Install Basic Software & Packages"
+echo "     APT Install Software & Packages"
 echo " "
 echo "     Enter your user password, to continue if necessary"
 echo " "
@@ -57,18 +57,24 @@ sleep 5
 
 sudo apt install -y xorg x11-xserver-utils arandr bspwm sxhkd sddm picom polybar network-manager zsh kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen git lxpolkit lxappearance htop mc imagemagick npm sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver firefox-esr
 
+# Alacritty TEST
+sudo apt install -y librust-alacritty-terminal-dev
+
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
 
-sudo apt install -y inkscape gimp rawtherapee darktable okular
+# More Software, Packages & Programs
+#sudo apt install -y inkscape gimp rawtherapee darktable okular
 
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-echo " "
-echo "     Alacritty - Building and installing"
-echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-. ~/bspwm-install-ma-dte/install-alacritty-debian.sh
+
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo " "
+#echo "     Alacritty - Building and installing"
+#echo " "
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+#. ~/bspwm-install-ma-dte/install-alacritty-debian.sh
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
@@ -90,6 +96,11 @@ echo " "
 echo "     And then you are ready to reboot, sudo reboot"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+cd ~/bspwm-install-ma-dte/
+
+# VM TEST KEY COPY Shall not be included in the published edition.
+. copy-vm-keys.sh
 
 read -p "Press [Enter] key to Reboot System."
 echo "You are ready to reboot..."
