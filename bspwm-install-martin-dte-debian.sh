@@ -15,17 +15,19 @@ mkdir ~/wallpapers
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     Move files & copy new."
-echo "     SID apt sources.list"
+echo "     Testing apt sources.list"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-sudo sed -i 'deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
-sudo sed -i 'deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
+sleep 2
 
-#sudo echo "deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free" >> /etc/apt/sources.list
-#sudo echo "deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free" >> /etc/apt/sources.list
+#sudo sed -i 'deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
+#sudo sed -i 'deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list
 
+sudo sh -c "echo 'deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
+sudo sh -c "echo 'deb-src http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 
+sleep 2
 
 #sudo mv /etc/apt/sources.list ~/bspwm-install-ma-dte/apt/sources.list-backup
 #sudo cp ~/bspwm-install-ma-dte/apt/sources.list /etc/apt/sources.list
