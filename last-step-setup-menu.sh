@@ -3,7 +3,7 @@
 # Remember that this menu uses this apt package "dialog"
 
 HEIGHT=15
-WIDTH=40
+WIDTH=60
 CHOICE_HEIGHT=4
 BACKTITLE="Martin BSPwm DTE - The last step of the installation"
 TITLE="The last step of the installation"
