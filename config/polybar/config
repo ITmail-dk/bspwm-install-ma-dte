@@ -67,7 +67,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-# Option to provide a transparent can in x number of Pixels or a solid color around polubar
+;# Option to provide a transparent can in x number of Pixels or a solid color around polubar
 border-size = 0
 border-color = #00000000
 
@@ -86,11 +86,11 @@ font-3 = "Font Awesome 5 Free:style=Regular:size=12;2"
 font-4 = "Material Icons:style=Regular:size=12;2"
 font-5 = "DejaVuSansMono Nerd Font:style=Book:size=12;2"
 
-;# font-6 = "DejaVu Sans:size=11;2"
+;font-6 = "DejaVu Sans:style=Regular:size=11;2"
 
-modules-left = bspwm mpd
+modules-left = bspwm
 ;modules-center = mpd
-modules-right = pulseaudio cpu memory wlan eth date battery temperature powermenu
+modules-right = pulseaudio cpu memory wlan eth date temperature battery powermenu
 
 ; Models list - filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
@@ -162,6 +162,10 @@ label-empty-padding = 2
 
 ; Separator in between workspaces ON / OFF
 ; label-separator = |
+
+; ########################
+; ##### BSPWM MODULE #####
+; ########################
 
 ;##########################
 ;# new bspwm module new + icons start
