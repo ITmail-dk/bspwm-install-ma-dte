@@ -4,6 +4,7 @@
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     Hugo Extended v0.91.2 - Install"
+echo "     Before we Install we run an update..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
@@ -17,5 +18,12 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_extended_0.
 echo "Enter your user password, to continue."
 sudo apt install -y /tmp/hugo_extended_0.91.2_Linux-64bit.deb
 
+clear
 
-read -p "Hugo Extended v0.91.2 Install - ALL DONE - Press a key to Exit"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "    Hugo Extended v0.91.2 Install - ALL DONE"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+read -p "Press a key to Exit"
