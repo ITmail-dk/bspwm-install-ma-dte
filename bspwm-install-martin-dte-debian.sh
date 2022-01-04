@@ -63,6 +63,8 @@ chmod +x ~/.config/rofi/rofi-beats
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
+. ~/bspwm-install-ma-dte/install-scripts/apt-install-all-packages.sh
+
 # Add ROOT Level - Software & Packages.
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #echo " "
@@ -74,14 +76,14 @@ chmod +x ~/.config/rofi/rofi-beats
 #echo " "
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-sudo apt update
-sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar network-manager kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver neofetch firefox-esr
+#sudo apt update
+#sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar network-manager kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver neofetch firefox-esr
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
+#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
 
 # More Software & Packages ON / OFF
-sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager
+#sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
@@ -94,15 +96,15 @@ sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-l1
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 # Alacritty - Building and installing ON / OFF
 
-#. ~/bspwm-install-ma-dte/install-alacritty-debian.sh
+#. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
 
 # Last step setup menu installing.
 . last-step-setup-menu.sh
 
-# Clean up and delete folders and other installation files
+# Clean up and delete folders and other installation files ON / OFF
 #cd ~
 #rm -r ~/bspwm-install-ma-dte/
 
-read -p "Press [Enter] key to Reboot System."
-echo "You are ready to reboot..."
+read -p "You are ready to reboot... Press [Enter] key to Reboot System."
+echo " "
 sudo reboot
