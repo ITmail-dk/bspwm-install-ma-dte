@@ -164,7 +164,7 @@ label-empty-padding = 2
 ; label-separator = |
 
 ;##########################
-;# bspwm module new + icons
+;# new bspwm module new + icons start
 ;[module/bspwm]
 ;type = internal/bspwm
 
@@ -186,47 +186,49 @@ label-empty-padding = 2
 ;ws-icon-default = ""
 
 
-format = <label-state> <label-mode>
+;format = <label-state> <label-mode>
 
-label-focused = %icon%
-label-focused-background = ${colors.background}
-label-focused-underline= ${colors.underline-c1}
-label-focused-padding = 2
-label-focused-foreground = ${colors.icon-c1}
+;label-focused = %icon%
+;label-focused-background = ${colors.background}
+;label-focused-underline= ${colors.underline-c1}
+;label-focused-padding = 2
+;label-focused-foreground = ${colors.icon-c1}
 
-label-occupied = %icon%
-label-occupied-padding = 2
-label-occupied-background = ${colors.background}
+;label-occupied = %icon%
+;label-occupied-padding = 2
+;label-occupied-background = ${colors.background}
 
-label-urgent = %icon%
-label-urgent-padding = 2
+;label-urgent = %icon%
+;label-urgent-padding = 2
 
-label-empty = %icon%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
-label-empty-background = ${colors.background}
-label-monocle = "  "
-label-monocle-foreground = ${colors.foreground}
-label-tiled = "  "
-label-tiled-foreground = ${colors.foreground}
-label-fullscreen = "  "
-label-fullscreen-foreground = ${colors.foreground}
-label-floating = "  "
-label-floating-foreground = ${colors.foreground}
-label-pseudotiled = "  "
-label-pseudotiled-foreground = ${colors.foreground}
-label-locked = "  "
-label-locked-foreground = ${colors.foreground}
-label-sticky = "  "
-label-sticky-foreground = ${colors.foreground}
-label-private =  "     "
-label-private-foreground = ${colors.foreground}
+;label-empty = %icon%
+;label-empty-foreground = ${colors.foreground-alt}
+;label-empty-padding = 2
+;label-empty-background = ${colors.background}
+;label-monocle = "  "
+;label-monocle-foreground = ${colors.foreground}
+;label-tiled = "  "
+;label-tiled-foreground = ${colors.foreground}
+;label-fullscreen = "  "
+;label-fullscreen-foreground = ${colors.foreground}
+;label-floating = "  "
+;label-floating-foreground = ${colors.foreground}
+;label-pseudotiled = "  "
+;label-pseudotiled-foreground = ${colors.foreground}
+;label-locked = "  "
+;label-locked-foreground = ${colors.foreground}
+;label-sticky = "  "
+;label-sticky-foreground = ${colors.foreground}
+;label-private =  "     "
+;label-private-foreground = ${colors.foreground}
 
 ; Separator in between workspaces
 ;label-separator = |
 ;label-separator-padding = 1
 ;label-separator-foreground = #ffb52a
 
+;##########################
+;# new bspwm module new + icons end
 
 [module/mpd]
 type = internal/mpd
