@@ -78,7 +78,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
 
 # More Software & Packages ON / OFF
-sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-l10n-da inkscape gimp rawtherapee darktable okular
+sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
