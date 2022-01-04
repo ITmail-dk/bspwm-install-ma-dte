@@ -65,9 +65,10 @@ module-margin-right = 3
 
 ; Findt font name - fc-list | grep FONT NAME HER
 ; font-N = <fontconfig pattern>;<vertical offset>
-font-0 = "DejaVu Sans:pixelsize=10;2"
-font-1 = "Material Icons:style=Regular:size=11;2"
-font-2 = "DejaVuSansMono Nerd Font:style=Book:size=11;2"
+font-0 = "DejaVu Sans:pixelsize=11;2"
+font-1 = "DejaVu Sans:pixelsize=14;2"
+font-2 = "Material Icons:style=Regular:size=11;2"
+font-3 = "DejaVuSansMono Nerd Font:style=Book:size=11;2"
 
 modules-left = bspwm mpd
 ;modules-center = mpd
