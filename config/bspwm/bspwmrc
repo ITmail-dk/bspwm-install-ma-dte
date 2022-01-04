@@ -55,7 +55,10 @@ picom &
 feh --bg-fill ~/wallpapers/default-wallpaper.jpg &
 nitrogen --restore &
 pulseaudio --kill &
-sleep 2
+sleep 3
 pulseaudio --start &
+
 xscreensaver -nosplash &
+
+sleep 3
 $HOME/.config/polybar/run-polybar.sh &

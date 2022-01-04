@@ -21,3 +21,7 @@ sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.de
 
 # More Software & Packages ON / OFF
 sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager
+
+
+# More Themes Extra Packages ON / OFF
+sudo apt install -y papirus-icon-theme breeze-cursor-theme gnome-themes-extra

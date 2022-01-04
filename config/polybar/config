@@ -85,7 +85,6 @@ font-2 = "Font Awesome 6 Free:style=Regular:size=12;2"
 font-3 = "Font Awesome 5 Free:style=Regular:size=12;2"
 font-4 = "Material Icons:style=Regular:size=12;2"
 font-5 = "DejaVuSansMono Nerd Font:style=Book:size=12;2"
-
 ;font-6 = "DejaVu Sans:style=Regular:size=11;2"
 
 modules-left = bspwm
@@ -143,6 +142,8 @@ label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/bspwm]
 type = internal/bspwm
+
+enable-scroll = false
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
