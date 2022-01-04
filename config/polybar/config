@@ -47,7 +47,7 @@ c2 = #484c4f
 [bar/bspwmbar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 27
+height = 28
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0
