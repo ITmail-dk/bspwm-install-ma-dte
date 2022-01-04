@@ -75,6 +75,7 @@ chmod +x ~/.config/rofi/rofi-beats
 #echo "     continues the software installation in 5 seconds"
 #echo " "
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+sleep 5
 
 #sudo apt update
 #sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar network-manager kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen lxpolkit lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver neofetch firefox-esr
@@ -104,6 +105,7 @@ chmod +x ~/.config/rofi/rofi-beats
 # Clean up and delete folders and other installation files ON / OFF
 #cd ~
 #rm -r ~/bspwm-install-ma-dte/
+sleep 1
 
 read -p "You are ready to reboot... Press [Enter] key to Reboot System."
 echo " "
