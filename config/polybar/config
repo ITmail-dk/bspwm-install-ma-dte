@@ -152,6 +152,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 ; Separator in between workspaces ON / OFF
 ; label-separator = |
 
+;# bspwm module new + icons
 [module/bspwm]
 type = internal/bspwm
 
@@ -189,7 +190,7 @@ label-urgent = %icon%
 label-urgent-padding = 2
 
 label-empty = %icon%
-label-empty-foreground = ${colors.foreground}
+label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 label-empty-background = ${colors.background}
 label-monocle = "  "
