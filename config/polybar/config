@@ -87,7 +87,7 @@ font-4 = "Material Icons:style=Regular:size=12;2"
 font-5 = "DejaVuSansMono Nerd Font:style=Book:size=12;2"
 ;font-6 = "DejaVu Sans:style=Regular:size=11;2"
 
-modules-left = bspwm
+modules-left = bspwm xwindow
 ;modules-center = mpd
 modules-right = pulseaudio cpu memory wlan eth date temperature battery powermenu
 
