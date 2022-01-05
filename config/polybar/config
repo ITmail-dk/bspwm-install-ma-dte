@@ -142,6 +142,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/bspwm]
 type = internal/bspwm
+pin-workspaces = true
 
 enable-scroll = false
 
