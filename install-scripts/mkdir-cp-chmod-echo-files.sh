@@ -29,6 +29,7 @@ mkdir ~/music
 cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
+cp -r ~/bspwm-install-ma-dte/music/* ~/music/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 
 # Echo config to files. YES / NO
