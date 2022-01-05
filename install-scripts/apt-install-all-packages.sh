@@ -16,10 +16,10 @@ sleep 3
 sudo apt update && sudo apt upgrade -y
 
 # Core packages to be installed
-sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xidle i3lock-fancy network-manager kitty psmisc rofi thunar thunar-archive-plugin thunar-font-manager tlp font-manager gvfs-backends nitrogen emacs lxpolkit xbacklight lxappearance htop mc npm feh sxiv pulseaudio pulsemixer npm curl firefox-esr
+sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xidle i3lock-fancy network-manager kitty psmisc rofi thunar thunar-archive-plugin thunar-font-manager tlp font-manager gvfs-backends nitrogen emacs lxpolkit xbacklight lxappearance htop mc mpv feh sxiv pulseaudio pulsemixer npm curl firefox-esr
 
 # Software & Packages
-sudo apt install -y ranger neovim flameshot mpd cmus ncmpcpp notify-osd imagemagick neofetch flatpak cava obs-studio
+sudo apt install -y ranger neovim flameshot cmus ncmpcpp notify-osd imagemagick neofetch flatpak cava obs-studio
 
 # More Software & Packages ON / OFF
 sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-style-breeze libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager
