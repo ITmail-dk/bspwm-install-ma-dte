@@ -10,7 +10,7 @@ echo " "
 echo "     continues the software installation in 5 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-sleep 5
+sleep 4
 
 sudo apt update
 sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar i3lock-fancy network-manager kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen lxpolkit xbacklight lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver curl neofetch firefox-esr
