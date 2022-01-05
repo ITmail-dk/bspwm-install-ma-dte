@@ -16,7 +16,7 @@ sleep 3
 sudo apt update && sudo apt upgrade -y
 
 # Core packages to be installed
-sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xidle lxlock network-manager kitty psmisc rofi thunar thunar-archive-plugin thunar-font-manager tlp font-manager gvfs-backends nitrogen emacs lxpolkit xbacklight lxappearance htop mc npm feh sxiv pulseaudio pulsemixer npm curl firefox-esr
+sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xidle i3lock-fancy network-manager kitty psmisc rofi thunar thunar-archive-plugin thunar-font-manager tlp font-manager gvfs-backends nitrogen emacs lxpolkit xbacklight lxappearance htop mc npm feh sxiv pulseaudio pulsemixer npm curl firefox-esr
 
 # Software & Packages
 sudo apt install -y ranger neovim flameshot mpd cmus ncmpcpp notify-osd imagemagick neofetch flatpak cava
@@ -29,7 +29,7 @@ sudo apt install -y dunst
 
 # Maybe 
 # qt5ct .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
-# i3lock-fancy xscreensaver
+# xscreensaver
 
 # Google Chrome - Download + Install  ON / OFF
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
