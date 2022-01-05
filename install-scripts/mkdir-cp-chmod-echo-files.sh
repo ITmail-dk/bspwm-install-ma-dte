@@ -7,9 +7,14 @@
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 mkdir ~/.config
 mkdir ~/.themes
-mkdir ~/.icons
 mkdir ~/.fonts
+mkdir ~/.icons
 mkdir ~/wallpapers
+mkdir ~/miscellaneous
+mkdir ~/downloads
+mkdir ~/documents
+mkdir ~/pictures
+mkdir ~/music
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
