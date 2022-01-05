@@ -5,9 +5,11 @@
 pkill polybar
 pkill polybar
 
-while pgrep -u $UID -x polybar >/dev/null; do sleep 2; done
+while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch Polybar
-polybar -r bspwmbar
+# Run Polybar
+polybar -r bspwmbar &
 
-echo "Polybar Starter..."
+if [[ $(xrandr -q | grep 'HDMI1 connected') ]]; then
+	polybar external -c $(dirname $0)/config-external &
+fi
