@@ -45,13 +45,13 @@ echo "     Add UPUP alias to bash config."
 echo "alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y" >> ~/.bash_aliases
 
 # Echo Nitrogen config to files.
-echo "dirs=$HOME/wallpapers;" >> $HOME/.config/nitrogen/nitrogen.cfg
+echo "dirs=$HOME/wallpapers;" >> ~/.config/nitrogen/nitrogen.cfg
 
 touch ~/.config/nitrogen/bg-saved.cfg
-echo "[xin_-1]" >> $HOME/.config/nitrogen/bg-saved.cfg
+echo "[xin_-1]" >> ~/.config/nitrogen/bg-saved.cfg
 echo "file=$HOME/wallpapers/1080p/pexels-fiona-art-3631430.jpg" >> ~/.config/nitrogen/bg-saved.cfg
-echo "mode=5" >> $HOME/.config/nitrogen/bg-saved.cfg
-echo "bgcolor=#191a1b" >> $HOME/.config/nitrogen/bg-saved.cfg
+echo "mode=5" >> ~/.config/nitrogen/bg-saved.cfg
+echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 
 
 #chmod +x files.
