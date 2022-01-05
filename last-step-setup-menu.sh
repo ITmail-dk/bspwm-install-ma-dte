@@ -39,7 +39,7 @@ case $CHOICE in
             sudo apt install -y intel-microcode nvidia-detect nvidia-driver && sudo reboot
             ;;
         5)
-            . ~/bspwm-install-ma-dte/install-scripts/copy-vm-keys.sh && echo "xrandr -s 1920x1080 &" >> $HOME/.config/bspwm/bspwmrc && sudo reboot
+            . ~/bspwm-install-ma-dte/install-scripts/copy-vm-keys.sh && sudo reboot
             ;;
         6)
             sudo reboot

@@ -12,19 +12,22 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 3
 
-sudo apt update
+# APT Update & apt upgrade
+sudo apt update && sudo apt upgrade -y
+
 # Core packages to be installed
-sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar i3lock-fancy network-manager kitty psmisc rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends nitrogen emacs lxpolkit xbacklight lxappearance htop mc npm feh sxiv pulseaudio pulsemixer npm xscreensaver curl firefox-esr
+sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar i3lock-fancy network-manager kitty psmisc rofi thunar thunar-archive-plugin thunar-font-manager tlp font-manager gvfs-backends nitrogen emacs lxpolkit xbacklight lxappearance htop mc npm feh sxiv pulseaudio pulsemixer npm xscreensaver curl firefox-esr
 
 # Software & Packages
-sudo apt install -y ranger neovim flameshot mpd ncmpcpp notify-osd imagemagick neofetch
+sudo apt install -y ranger neovim flameshot mpd ncmpcpp notify-osd imagemagick neofetch flatpak
 
 # More Software & Packages ON / OFF
 sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-style-breeze libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager
 
 # Maybe maybe Software & Packages ON / OFF
-sudo apt install -y dunst tlp cmus qt5ct
-# .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
+sudo apt install -y dunst cmus
+
+# Maybe qt5ct .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Google Chrome - Download + Install  ON / OFF
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
