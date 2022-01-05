@@ -51,7 +51,7 @@ echo "dirs=$HOME/wallpapers;" >> ~/.config/nitrogen/nitrogen.cfg
 
 touch ~/.config/nitrogen/bg-saved.cfg
 echo "[xin_-1]" >> ~/.config/nitrogen/bg-saved.cfg
-echo "file=$HOME/wallpapers/1080p/pexels-fiona-art-3631430.jpg" >> ~/.config/nitrogen/bg-saved.cfg
+echo "file=$HOME/wallpapers/default-wallpaper.jpg" >> ~/.config/nitrogen/bg-saved.cfg
 echo "mode=5" >> ~/.config/nitrogen/bg-saved.cfg
 echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 

@@ -13,6 +13,8 @@ cd ~/bspwm-install-ma-dte
 # Add ROOT Level - Software & Packages.
 . ~/bspwm-install-ma-dte/install-scripts/apt-install-all-packages.sh
 
+# Add pulseaudio to system startup.
+systemctl --user enable pulseaudio
 
 # Alacritty - Building and installing ON / OFF
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
