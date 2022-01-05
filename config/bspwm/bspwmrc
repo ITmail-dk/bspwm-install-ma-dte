@@ -33,6 +33,9 @@ bspc config focus_follows_pointer true
 bspc config pointer_follows_monitor true
 bspc config click_to_focus false
 
+bspc config pointer_modifier mod1
+bspc config pointer_action1 resize_side
+
 # Rule Commands - General Syntax.
 # bspc rule -a, --add (<class_name>|*)[:(<instance_name>|\*)[:(<name>|*)]] 
 # [*-o*|--one-shot] [monitor=MONITOR_SEL|desktop=DESKTOP_SEL|node=NODE_SEL] 
