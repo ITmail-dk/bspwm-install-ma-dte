@@ -7,16 +7,20 @@ echo "     APT Install Software & Packages"
 echo " "
 echo "     Enter your user password, to continue if necessary"
 echo " "
-echo "     continues the software installation in 5 seconds"
+echo "     continues the software installation in 3 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-sleep 4
+sleep 3
 
 sudo apt update
-sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar i3lock-fancy network-manager kitty psmisc ranger rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends flameshot neovim nitrogen lxpolkit xbacklight lxappearance htop mc imagemagick npm feh sxiv pulseaudio pulsemixer mpd ncmpcpp notify-osd npm xscreensaver curl neofetch firefox-esr
+# Core packages to be installed
+sudo apt install -y xorg x11-xserver-utils arandr dialog bspwm sxhkd sddm picom polybar i3lock-fancy network-manager kitty psmisc rofi thunar thunar-archive-plugin thunar-font-manager font-manager gvfs-backends nitrogen emacs lxpolkit xbacklight lxappearance htop mc npm feh sxiv pulseaudio pulsemixer npm xscreensaver curl firefox-esr
+
+# Software & Packages
+sudo apt install -y ranger neovim flameshot mpd ncmpcpp notify-osd imagemagick neofetch
 
 # More Software & Packages ON / OFF
-sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-style-breeze libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager emacs
+sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-style-breeze libreoffice-l10n-da inkscape gimp rawtherapee darktable okular virt-manager
 
 # Maybe maybe Software & Packages ON / OFF
 sudo apt install -y dunst tlp cmus qt5ct
