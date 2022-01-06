@@ -89,7 +89,7 @@ font-5 = "DejaVuSansMono Nerd Font:style=Book:size=12;2"
 
 modules-left = bspwm xwindow
 ;modules-center = mpd
-modules-right = pulseaudio cpu memory wlan eth date temperature battery powermenu
+modules-right = pulseaudio cpu memory wlan eth date temperature battery powermenu session
 
 ; Models list - filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
@@ -476,6 +476,17 @@ menu-2-0 = 
 menu-2-0-exec = systemctl poweroff
 menu-2-1 = 
 menu-2-1-exec = menu-open-0
+
+
+[module/session]
+type = custom/text
+
+click-left = powermenu.sh
+content = %{T4}%{T-}
+content-background = ${colors.shade-2}
+content-foreground = ${colors.shade-5}
+content-padding = 1
+
 
 [settings]
 screenchange-reload = true

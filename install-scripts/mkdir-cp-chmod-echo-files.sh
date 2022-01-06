@@ -9,6 +9,8 @@ mkdir ~/.config
 mkdir ~/.themes
 mkdir ~/.fonts
 mkdir ~/.icons
+mkdir ~/.local
+mkdir ~/.local/bin
 mkdir ~/wallpapers
 mkdir ~/miscellaneous
 mkdir ~/downloads
@@ -31,6 +33,8 @@ cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
 cp -r ~/bspwm-install-ma-dte/music/* ~/music/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
+cp -r ~/bspwm-install-ma-dte/local-files/* ~/.local/
+cp -r ~/bspwm-install-ma-dte/user-scripts/* ~/.local/bin
 
 # Echo config to files. YES / NO
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -62,6 +66,7 @@ echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 #echo "     chmod +x files."
 #echo " "
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+
 chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/sxhkd/sxhkdrc
 
