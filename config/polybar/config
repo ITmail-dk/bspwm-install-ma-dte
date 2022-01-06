@@ -27,22 +27,22 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #F2151a1c
-background-alt = #151a1c
+background = #F209141E
+background-alt = #09141E
 ;foreground = ${xrdb:color7:#222}
-foreground = #ededed
+foreground = #ebebeb
 foreground-alt = #555
-primary = #035a99
-secondary = #0d4f8c
+primary = #333D53
+secondary = #26324D
 alert = #e31b37
 icon-c1 = #fafafa
-icon-c2 = #fafafa
-icon-c3 = #fafafa
+icon-c2 = #26324D
+icon-c3 = #83858A
 underline-c1 = #fafafa
-underline-c2 = #fafafa
-underline-c3 = #fafafa
+underline-c2 = #26324D
+underline-c3 = #83858A
 c1 = #fafafa
-c2 = #484c4f
+c2 = #333D53
 c3 = #44525c
 c4 = #23272e
 c5 = #6cb349
