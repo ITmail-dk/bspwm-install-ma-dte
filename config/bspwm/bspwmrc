@@ -15,9 +15,9 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 
 bspc config border_width 1
-bspc config normal_border_color 	"#111212"
-bspc config active_border_color 	"#006796"
-bspc config focused_border_color 	"#FF000000"
+bspc config normal_border_color 	"#0A1B2A"
+bspc config active_border_color 	"#313745"
+bspc config focused_border_color 	"#FF0A1B2A"
 
 bspc config window_gap 7
 
