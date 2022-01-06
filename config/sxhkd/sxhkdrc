@@ -2,18 +2,19 @@
 # Hotkey - Config
 #
 
-# terminal emulator
+# Terminal´s primary and secondary.
 super + Return
 	kitty
 
 super + shift + Return
 	alacritty
 
-# program launcher
+
+# Rofi program launcher.
 super + r
 	rofi -show run
 
-# make sxhkd reload its configuration files:
+# Reload sxhkd config file.
 super + alt + ctrl + Escape
 	pkill -USR1 -x sxhkd
 
@@ -30,8 +31,10 @@ super + e
 super + alt + ctrl + a
 	kitty -e pulsemixer
 
-super + alt + ctrl + m
-	. ~/.config/rofi/rofi-beats
+super + ctrl + m
+	. ~/.config/rofi/rofi-beats.sh
+
+
 
 #
 # BSPwm Hotkeys
@@ -58,7 +61,7 @@ super + {_,shift + }w
 #	bspc node -s biggest.window
 
 #
-# state/flags
+# State / Flags
 #
 
 # set the window state
@@ -70,7 +73,7 @@ super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
 #
-# focus/swap
+# Focus / Swap
 #
 
 # focus the node in the given direction
@@ -104,7 +107,7 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 #
-# preselect
+# Preselect
 #
 
 # preselect the direction
@@ -124,7 +127,7 @@ super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #
-# move/resize
+# Move / Resize
 #
 
 # expand a window by moving one of its side outward
@@ -137,4 +140,4 @@ super + alt + shift + {h,j,k,l}
 
 # move a floating window
 super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+	bspc node -v {-50 0,0 50,0 -50,50 0}
