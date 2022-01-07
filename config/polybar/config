@@ -26,6 +26,10 @@
 ; All transparence hex value from 100% to 0% alpha:
 ; https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4#all-hex-value-from-100-to-0-alpha
 ;
+; Icons are from Font Awesome 6 Free Regular + Nerd Font / FiraCode
+; https://fontawesome.com/v6.0/icons
+; https://www.nerdfonts.com/cheat-sheet
+;
 ;=========================================================================
 
 [colors]
@@ -146,16 +150,16 @@ type = internal/bspwm
 pin-workspaces = true
 enable-scroll = false
 
-ws-icon-0 = 1;1
-ws-icon-1 = 2;2
-ws-icon-2 = 3;3
-ws-icon-3 = 4;4
-ws-icon-4 = 5;5
-ws-icon-5 = 6;6
-ws-icon-6 = 7;7
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
 ws-icon-7 = 8;8
-s-icon-8 = 9;9
-ws-icon-9 = 10;10
+s-icon-8 = 9;
+ws-icon-9 = 10;
 ws-icon-default = ""
 
 label-focused = %icon%
@@ -220,7 +224,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 3
-format-prefix = "   "
+format-prefix = " "
 format-prefix-foreground = ${colors.icon-c1}
 format-underline = ${colors.c2}
 label = %percentage:2%%
@@ -228,7 +232,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = "   "
+format-prefix = " "
 format-prefix-foreground = ${colors.icon-c1}
 format-underline = #486352
 label = %percentage_used%%
@@ -281,7 +285,7 @@ date-alt = " %d-%m-%Y"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = "   "
+format-prefix = " "
 format-prefix-foreground = ${colors.icon-c1}
 format-underline = #23334a
 
@@ -318,12 +322,12 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = 墳 VOL
+label-volume = 墳 
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = "婢 "
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = muted
+label-muted = Muted
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
