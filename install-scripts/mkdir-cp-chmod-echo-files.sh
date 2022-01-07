@@ -57,7 +57,7 @@ touch ~/.bash_aliases
 echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> ~/.bash_aliases
 
 # Echo Nitrogen config to files.
-echo "dirs=$HOME/wallpapers;" >> ~/.config/nitrogen/nitrogen.cfg
+echo "dirs=$HOME/wallpapers/1080p;" >> ~/.config/nitrogen/nitrogen.cfg
 
 touch ~/.config/nitrogen/bg-saved.cfg
 echo "[xin_-1]" >> ~/.config/nitrogen/bg-saved.cfg
