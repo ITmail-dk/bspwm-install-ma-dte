@@ -38,6 +38,12 @@ super + ctrl + alt + w
 	. ~/.config/rofi/rofi-wifi-menu.sh
 
 
+#######   lock computer  #######
+super + l
+	i3lock-fancy -gp -- scrot -z
+
+
+
 # # # # # # # # # # #
 #   BSPwm Hotkeys   #
 # # # # # # # # # # #
