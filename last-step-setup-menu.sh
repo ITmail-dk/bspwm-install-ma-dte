@@ -39,7 +39,7 @@ case $CHOICE in
             sudo apt install -y intel-microcode nvidia-detect nvidia-driver && sudo reboot
             ;;
         5)
-            . ~/bspwm-install-ma-dte/install-scripts/vm-install-mics.sh && sudo reboot
+            . ~/bspwm-install-ma-dte/install-scripts/vm-install-mics.sh && systemctl reboot
             ;;
         6)
             sudo reboot

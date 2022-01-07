@@ -37,9 +37,10 @@ super + ctrl + m
 super + ctrl + alt + w
 	. ~/.config/rofi/rofi-wifi-menu.sh
 
-#
-# BSPwm Hotkeys
-#
+
+# # # # # # # # # # #
+#   BSPwm Hotkeys   #
+# # # # # # # # # # #
 
 # quit/restart bspwm
 super + alt + ctrl + {q,r}
@@ -142,3 +143,20 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-50 0,0 50,0 -50,50 0}
+
+
+#####################################
+#                                   #
+#        Media-keys / Volume        #
+#                                   #
+
+super + alt + Up
+	amixer -D pulse sset Master 5%+ && notify-send "Volume up 5%"
+
+super + alt + Down
+	amixer -D pulse sset Master 5%- && notify-send "Volume down 5%"
+
+
+#                                   #
+#####################################
+
