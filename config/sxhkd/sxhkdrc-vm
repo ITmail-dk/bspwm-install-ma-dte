@@ -1,22 +1,23 @@
 #
-# Hotkey - Config
+#        Hotkey - Config
 #
+###################################
+# Reload sxhkd config file.
+super + alt + ctrl + Escape
+	pkill -USR1 -x sxhkd
+###################################
 
-# terminal emulator
+# Terminal´s primary and secondary.
 alt + Return
 	kitty
 
 alt + shift + Return
 	alacritty
 
-# program launcher
+
+# Rofi program launcher.
 alt + r
 	rofi -show run
-
-# make sxhkd reload its configuration files:
-alt + ctrl + Escape
-	pkill -USR1 -x sxhkd
-
 
 alt + b
 	google-chrome
@@ -25,13 +26,16 @@ alt + shift + b
 	firefox
 
 alt + e
-	thunar
+	pcmanfm
 
-super + alt + ctrl + a
+shift + alt + ctrl + a
 	kitty -e pulsemixer
 
 alt + ctrl + m
-	. ~/.config/rofi/rofi-beats
+	. ~/.config/rofi/rofi-beats.sh
+
+shift + ctrl + alt + w
+	. ~/.config/rofi/rofi-wifi-menu.sh
 
 #
 # BSPwm Hotkeys
@@ -58,7 +62,7 @@ alt + {_,shift + }w
 #	bspc node -s biggest.window
 
 #
-# state/flags
+# State / Flags
 #
 
 # set the window state
@@ -66,11 +70,11 @@ alt + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
-super + ctrl + {m,x,y,z}
+alt + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
 #
-# focus/swap
+# Focus / Swap
 #
 
 # focus the node in the given direction
@@ -104,7 +108,7 @@ alt + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 #
-# preselect
+# Preselect
 #
 
 # preselect the direction
@@ -124,17 +128,17 @@ alt + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #
-# move/resize
+# Move / Resize
 #
 
 # expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
+ctrl + alt + {h,j,k,l}
 	bspc node -z {left -50 0,bottom 0 50,top 0 -50,right 50 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
+ctrl + alt + shift + {h,j,k,l}
 	bspc node -z {right -50 0,top 0 50,bottom 0 -50,left 50 0}
 
 # move a floating window
-super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+alt + {Left,Down,Up,Right}
+	bspc node -v {-50 0,0 50,0 -50,50 0}
