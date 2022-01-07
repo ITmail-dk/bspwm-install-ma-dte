@@ -13,6 +13,7 @@ mkdir ~/.local
 mkdir ~/.local/bin
 mkdir ~/wallpapers
 mkdir ~/miscellaneous
+mkdir ~/Templates
 mkdir ~/downloads
 mkdir ~/documents
 mkdir ~/pictures
