@@ -27,21 +27,21 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            sudo apt install -y amd64-microcode && sudo reboot
+            sudo apt install -y amd64-microcode && systemctl reboot
             ;;
         2)
-            sudo apt install -y amd64-microcode nvidia-detect nvidia-driver && sudo reboot
+            sudo apt install -y amd64-microcode nvidia-detect nvidia-driver && systemctl reboot
             ;;
         3)
-            sudo apt install -y intel-microcode && sudo reboot
+            sudo apt install -y intel-microcode && systemctl reboot
             ;;
         4)
-            sudo apt install -y intel-microcode nvidia-detect nvidia-driver && sudo reboot
+            sudo apt install -y intel-microcode nvidia-detect nvidia-driver && systemctl reboot
             ;;
         5)
             . ~/bspwm-install-ma-dte/install-scripts/vm-install-mics.sh && systemctl reboot
             ;;
         6)
-            sudo reboot
+            systemctl reboot
             ;;
 esac
