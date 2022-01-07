@@ -16,7 +16,7 @@ sleep 3
 sudo apt update && sudo apt upgrade -y
 
 # Core packages to be installed
-sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock i3lock-fancy network-manager kitty psmisc rofi pcmanfm tlp font-manager gvfs-backends nitrogen dunst emacs lxpolkit xbacklight lxappearance htop mc xarchiver mpv feh sxiv pulseaudio pulsemixer npm curl imagemagick scrot firefox-esr
+sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock i3lock-fancy network-manager kitty psmisc rofi pcmanfm tlp font-manager gvfs-backends nitrogen dunst smbclient emacs lxpolkit xbacklight lxappearance htop mc xarchiver mpv feh sxiv pulseaudio pulsemixer npm curl imagemagick scrot firefox-esr
 
 # Software & Packages
 sudo apt install -y ranger neovim flameshot cmus ncmpcpp notify-osd neofetch flatpak cava obs-studio
