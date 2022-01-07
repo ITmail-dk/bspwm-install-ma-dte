@@ -10,25 +10,18 @@ cd ~/bspwm-install-ma-dte
 #read -p "Troubleshooting - Press a key to continue the installation."
 
 
-# Add ROOT Level - Software & Packages.
-. ~/bspwm-install-ma-dte/install-scripts/apt-install-all-packages.sh
+# Add Software & Packages.
+. ~/bspwm-install-ma-dte/install-scripts/apt-install-packages.sh
 
-# Add pulseaudio to system startup.
+# Add Pulseaudio to system startup as user.
 systemctl --user enable pulseaudio
 
-# Alacritty - Building and installing ON / OFF
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Alacritty - Building and installing"
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-# Alacritty - Building and installing ON / OFF
-
-#. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
-
+# Last Software & Packages.
+. ~/bspwm-install-ma-dte/install-scripts/apt-install-last-packages.sh
 
 # Last step setup menu installing.
 . last-step-setup-menu.sh
+
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo " "
@@ -43,5 +36,5 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 1
 
 read -p "You are ready to reboot... Press [Enter] key to Reboot System."
-echo " "
+
 sudo reboot

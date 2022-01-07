@@ -9,11 +9,11 @@ configuration {
 @theme "/dev/null"
 
 * {
-  bg: #11121D;
-  bg-alt: #444b6a;
+  bg: #10171c;
+  bg-alt: #344959;
 
-  fg: #FFFFFF;
-  fg-alt: #787c99;
+  fg: #EBEBEB;
+  fg-alt: #768ca3;
 
   background-color: @bg;
   
@@ -78,5 +78,4 @@ prompt {
 /* vim: ft=sass
 
 // Theme location is "/usr/share/rofi/themes/name.rasi"
-
 //@theme "/usr/share/rofi/themes/Arc-Dark.rasi"

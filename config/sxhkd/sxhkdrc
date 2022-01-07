@@ -1,6 +1,11 @@
 #
-# Hotkey - Config
+#        Hotkey - Config
 #
+###################################
+# Reload sxhkd config file.
+super + alt + ctrl + Escape
+	pkill -USR1 -x sxhkd
+###################################
 
 # Terminal´s primary and secondary.
 super + Return
@@ -14,11 +19,6 @@ super + shift + Return
 super + r
 	rofi -show run
 
-# Reload sxhkd config file.
-super + alt + ctrl + Escape
-	pkill -USR1 -x sxhkd
-
-
 super + b
 	google-chrome
 
@@ -26,7 +26,7 @@ super + shift + b
 	firefox
 
 super + e
-	thunar
+	pcmanfm
 
 super + alt + ctrl + a
 	kitty -e pulsemixer
@@ -34,7 +34,8 @@ super + alt + ctrl + a
 super + ctrl + m
 	. ~/.config/rofi/rofi-beats.sh
 
-
+super + ctrl + alt + w
+	. ~/.config/rofi/rofi-wifi-menu.sh
 
 #
 # BSPwm Hotkeys

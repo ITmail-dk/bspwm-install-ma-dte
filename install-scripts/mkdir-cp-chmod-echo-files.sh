@@ -33,8 +33,12 @@ cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
 cp -r ~/bspwm-install-ma-dte/music/* ~/music/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
-cp -r ~/bspwm-install-ma-dte/local-files/* ~/.local/
-cp -r ~/bspwm-install-ma-dte/user-scripts/* ~/.local/bin
+
+#cp ~/bspwm-install-ma-dte/local-files/* ~/.local/
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+
 
 # Echo config to files. YES / NO
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -60,6 +64,10 @@ echo "file=$HOME/wallpapers/default-wallpaper.jpg" >> ~/.config/nitrogen/bg-save
 echo "mode=5" >> ~/.config/nitrogen/bg-saved.cfg
 echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+
+
 #chmod +x files.
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 #echo " "
@@ -71,7 +79,13 @@ chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/sxhkd/sxhkdrc
 
 chmod +x ~/.config/polybar/run-polybar.sh
-chmod +x ~/.config/rofi/rofi-beats
+chmod +x ~/.config/rofi/powermenu.sh
+chmod +x ~/.config/rofi/rofi-wifi-menu.sh
+chmod +x ~/.config/rofi/rofi-beats.sh
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+
 
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #echo " "

@@ -27,16 +27,11 @@ sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gt
 # Maybe maybe Software & Packages ON / OFF
 sudo apt install -y dunst
 
+# Themes Extra Packages ON / OFF
+sudo apt install -y papirus-icon-theme breeze-cursor-theme gnome-themes-extra
+
+
 # Other packages not included or removed 
 # virt-manager xscreensaver thunar thunar-archive-plugin thunar-font-manager
 # qt5ct .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
 
-
-# Google Chrome - Download + Install  ON / OFF
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
-
-
-
-# Themes Extra Packages ON / OFF
-sudo apt install -y papirus-icon-theme breeze-cursor-theme gnome-themes-extra
