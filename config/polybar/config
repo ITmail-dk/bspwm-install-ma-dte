@@ -65,18 +65,18 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
+line-size = 1
 line-color = #dbdbdb
 
 ;# Ttransparent or Solid color border around Polybar. (Size in Pixels) 
 border-size = 0
 border-color = #00000000
 
-padding-left = 2
-padding-right = 2
+padding-left = 0
+padding-right = 1
 
 module-margin-left = 0
-module-margin-right = 3
+module-margin-right = 1
 
 ; Findt font name - fc-list | grep FONT NAME HER
 ; font-N = <fontconfig pattern>;<vertical offset>
@@ -137,104 +137,50 @@ label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
-; ########################
-; ##### BSPWM MODULE #####
-; ########################
+; ##############################
+; ##### BSPWM MODULE START #####
+; ##############################
 
 [module/bspwm]
 type = internal/bspwm
 pin-workspaces = true
 enable-scroll = false
 
-label-focused = %index%
+ws-icon-0 = 1;1
+ws-icon-1 = 2;2
+ws-icon-2 = 3;3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+s-icon-8 = 9;9
+ws-icon-9 = 10;10
+ws-icon-default = ""
+
+label-focused = %icon%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.underline-c1}
-label-focused-padding = 2
+label-focused-padding = 1
 
-label-occupied = %index%
-label-occupied-padding = 2
+label-occupied = %icon%
+label-occupied-padding = 1
 
-label-urgent = %index%!
+label-urgent = %icon%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
-label-empty = %index%
+label-empty = %icon%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 1
 
 ; Separator in between workspaces ON / OFF
 ; label-separator = |
 
-; ########################
-; ##### BSPWM MODULE #####
-; ########################
+; ############################
+; ##### BSPWM MODULE END #####
+; ############################
 
-;##########################
-;# new bspwm module new + icons start
-;[module/bspwm]
-;type = internal/bspwm
-
-;enable-click = true
-;enable-scroll = true
-;reverse-scroll = true
-;pin-workspaces = true
-
-;ws-icon-0 = 1;
-;ws-icon-1 = 2;
-;ws-icon-2 = 3;
-;ws-icon-3 = 4;
-;ws-icon-4 = 5;
-;ws-icon-5 = 6;
-;ws-icon-6 = 7;
-;ws-icon-7 = 8;
-;ws-icon-8 = 9;
-;ws-icon-9 = 10;
-;ws-icon-default = ""
-
-
-;format = <label-state> <label-mode>
-
-;label-focused = %icon%
-;label-focused-background = ${colors.background}
-;label-focused-underline= ${colors.underline-c1}
-;label-focused-padding = 2
-;label-focused-foreground = ${colors.icon-c1}
-
-;label-occupied = %icon%
-;label-occupied-padding = 2
-;label-occupied-background = ${colors.background}
-
-;label-urgent = %icon%
-;label-urgent-padding = 2
-
-;label-empty = %icon%
-;label-empty-foreground = ${colors.foreground-alt}
-;label-empty-padding = 2
-;label-empty-background = ${colors.background}
-;label-monocle = "  "
-;label-monocle-foreground = ${colors.foreground}
-;label-tiled = "  "
-;label-tiled-foreground = ${colors.foreground}
-;label-fullscreen = "  "
-;label-fullscreen-foreground = ${colors.foreground}
-;label-floating = "  "
-;label-floating-foreground = ${colors.foreground}
-;label-pseudotiled = "  "
-;label-pseudotiled-foreground = ${colors.foreground}
-;label-locked = "  "
-;label-locked-foreground = ${colors.foreground}
-;label-sticky = "  "
-;label-sticky-foreground = ${colors.foreground}
-;label-private =  "     "
-;label-private-foreground = ${colors.foreground}
-
-; Separator in between workspaces
-;label-separator = |
-;label-separator-padding = 1
-;label-separator-foreground = #ffb52a
-
-;##########################
-;# new bspwm module new + icons end
 
 [module/mpd]
 type = internal/mpd
