@@ -29,4 +29,4 @@ sleep 1
 
 read -p "You are ready to reboot... Press [Enter] key to Reboot System."
 
-sudo reboot
+systemctl reboot
