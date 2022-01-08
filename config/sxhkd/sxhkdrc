@@ -157,10 +157,10 @@ super + {Left,Down,Up,Right}
 #                                   #
 
 super + alt + Up
-	amixer -D pulse sset Master 5%+ && notify-send "Volume up 5%"
+	amixer -D pulse sset Master 5%+
 
 super + alt + Down
-	amixer -D pulse sset Master 5%- && notify-send "Volume down 5%"
+	amixer -D pulse sset Master 5%-
 
 
 #                                   #

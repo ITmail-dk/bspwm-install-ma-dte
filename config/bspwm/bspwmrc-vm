@@ -1,0 +1,70 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+#bspc monitor (-d or NAME) also the number that should be on that screen.
+#example of reverse order on screens.
+#bspc monitor Screen-1 -s Screen-2
+
+#bspc monitor -d I II III IV V VI VII VIII IX X
+
+# set the screen resolution and you can find your maximum resolution with this Command.
+# Run xrandr in the terminal.
+xrandr -s 1920x1080 &
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width 1
+bspc config normal_border_color 	"#0A1B2A"
+bspc config active_border_color 	"#313745"
+bspc config focused_border_color 	"#FF0A1B2A"
+
+bspc config window_gap 7
+
+bspc config split_ratio     0.50
+bspc config top_padding     28
+
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config single_monocle      true
+
+bspc config remove_unplugged_monitors   true
+bspc config remove_disabled_monitors    true
+
+bspc config focus_follows_pointer true
+bspc config pointer_follows_monitor true
+bspc config click_to_focus false
+
+bspc config pointer_modifier mod1
+bspc config pointer_action1 resize_side
+
+# Rule Commands - General Syntax.
+# bspc rule -a, --add (<class_name>|*)[:(<instance_name>|\*)[:(<name>|*)]] 
+# [*-o*|--one-shot] [monitor=MONITOR_SEL|desktop=DESKTOP_SEL|node=NODE_SEL] 
+# [state=STATE] [layer=LAYER] [split_dir=DIR] [split_ratio=RATIO] 
+# [(hidden|sticky|private|locked|marked|center|follow|manage|focus|border)=(on|off)] 
+# [rectangle=WxH+X+Y]
+
+# To Fine <class_name> Use xprop on terminal.
+
+# Example # bspc rule -a Google-chrome desktop='^2' follow=on border=off
+
+bspc rule -a Google-chrome desktop='^2' follow=on border=off
+bspc rule -a Firefox desktop='^2' follow=on border=off
+bspc rule -a Gimp desktop='^6' follow=on layer=above border=off
+bspc rule -a mplayer2 state=floating
+bspc rule -a Inkscape desktop='^7' follow=on border=off
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+
+# Automatically start up programs.
+picom &
+#feh --bg-fill ~/wallpapers/default-wallpaper.jpg &
+nitrogen --restore &
+#pulseaudio --kill &
+#sleep 3
+#pulseaudio --start &
+xscreensaver -nosplash &
+#sleep 2
+$HOME/.config/polybar/run-polybar.sh &
