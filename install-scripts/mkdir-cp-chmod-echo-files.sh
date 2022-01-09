@@ -13,11 +13,17 @@ mkdir ~/.local
 mkdir ~/.local/bin
 mkdir ~/wallpapers
 mkdir ~/miscellaneous
+# User folders.
+mkdir ~/Downloads
+mkdir ~/Documents
 mkdir ~/Templates
-mkdir ~/downloads
-mkdir ~/documents
-mkdir ~/pictures
-mkdir ~/music
+mkdir ~/Pictures
+mkdir ~/Desktop
+mkdir ~/Public
+mkdir ~/Videos
+mkdir ~/Music
+
+
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
@@ -31,15 +37,14 @@ mkdir ~/music
 
 cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
-cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
-cp -r ~/bspwm-install-ma-dte/music/* ~/music/
+#cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
+cp -r ~/bspwm-install-ma-dte/music/* ~/Music/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 
 #cp ~/bspwm-install-ma-dte/local-files/* ~/.local/
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
-
 
 # Echo config to files. YES / NO
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -88,9 +93,47 @@ chmod +x ~/.config/rofi/rofi-beats.sh
 #read -p "Troubleshooting - Press a key to continue the installation."
 
 
+#Unzip files to...
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo " "
+#echo "     Unzip files to..."
+#echo " "
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+#tar -xf themes/archive.tar.xz -C ~/.themes/
+#tar -xf themes/Nordic-bluish-accent.tar.xz -C ~/.themes/
+#tar -xf themes/cursors/Nordzy-cursors.tar.gz -C ~/.icons/
+
+#Git Clone files.
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo " "
+#echo "     Git Clone - Downloads"
+#echo " "
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+#git clone https://github.com/LINK Nordic-Theme Specific-folder
+
+git clone https://github.com/EliverLara/Nordic themes/themes-de/Nordic-theme
+git clone https://github.com/alvatip/Nordzy-cursors themes/cursors/Nordzy-cursors-theme
+git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme themes/icons/Papirus-icon-theme
+
+
+#Copy Theme files...
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo " "
+#echo "     Copy Theme files..."
+#echo " "
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+#cp -r ~/bspwm-install-ma-dte/themes/themes-de/* ~/.themes/
+#cp -r ~/bspwm-install-ma-dte/themes/cursors/* ~/.icons/
+#cp -r ~/bspwm-install-ma-dte/themes/icons/* ~/.icons/
+
+
+
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #echo " "
-#echo "     All DONE - User + .config files..."
+#echo "          All DONE - User + .config files..."
 #echo " "
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
