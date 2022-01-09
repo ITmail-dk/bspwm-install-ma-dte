@@ -129,7 +129,13 @@ git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme ~/bspwm-i
 #cp -r ~/bspwm-install-ma-dte/themes/cursors/* ~/.icons/
 #cp -r ~/bspwm-install-ma-dte/themes/icons/* ~/.icons/
 
+cp -r ~/bspwm-install-ma-dte/themes/themes-de/* ~/.themes/
 
+mkdir ~/.icons/Nordzy-cursors
+cp -r ~/bspwm-install-ma-dte/themes/cursors/Nordzy-cursors-theme/Nordzy-cursors/* ~/.icons/Nordzy-cursors
+
+mkdir ~/.icons/Papirus-Dark
+cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus-Dark/* ~/.icons/Papirus-Dark
 
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #echo " "
