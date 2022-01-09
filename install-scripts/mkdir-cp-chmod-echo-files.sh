@@ -113,9 +113,9 @@ chmod +x ~/.config/rofi/rofi-beats.sh
 
 #git clone https://github.com/LINK Nordic-Theme Specific-folder
 
-git clone https://github.com/EliverLara/Nordic themes/themes-de/Nordic-theme
-git clone https://github.com/alvatip/Nordzy-cursors themes/cursors/Nordzy-cursors-theme
-git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme themes/icons/Papirus-icon-theme
+git clone https://github.com/EliverLara/Nordic ~/bspwm-install-ma-dte/themes/themes-de/Nordic-theme
+git clone https://github.com/alvatip/Nordzy-cursors ~/bspwm-install-ma-dte/themes/cursors/Nordzy-cursors-theme
+git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme
 
 
 #Copy Theme files...
