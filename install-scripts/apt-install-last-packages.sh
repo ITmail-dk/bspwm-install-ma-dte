@@ -24,5 +24,6 @@ sleep 3
 
 
 # Google Chrome - Download + Install  ON / OFF
+rm google-chrome-stable_current_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
