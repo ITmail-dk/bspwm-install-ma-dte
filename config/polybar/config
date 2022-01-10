@@ -96,7 +96,7 @@ modules-left = bspwm xwindow
 ;modules-center = mpd
 modules-right = pulseaudio cpu memory wlan eth date temperature battery session
 
-; Models list - filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+; Models list - filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date session
 
 tray-position = right
 tray-padding = 2
@@ -393,10 +393,13 @@ label =   %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.icon-c1}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+ramp-0 = LL
+ramp-1 = L
+ramp-2 = M
+ramp-3 = M
+ramp-4 = M
+ramp-5 = H
+ramp-foreground = ${colors.icon-c1}
 
 
 [module/session]

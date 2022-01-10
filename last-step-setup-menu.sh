@@ -13,7 +13,7 @@ OPTIONS=(1 "Install AMD Driver"
          2 "Install AMD Driver + NVIDIA"
          3 "Install Intel Driver"
          4 "Install Intel + NVIDIA Driver"
-         5 "Virtual Machine - Copy New SUPER KEY to ALT KEY"
+         5 "Virtual Machine - New SUPER KEY to ALT KEY"
          6 "Do nothing and Reboot")
 
 CHOICE=$(dialog --clear \
