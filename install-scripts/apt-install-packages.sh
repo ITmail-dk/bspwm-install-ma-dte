@@ -19,7 +19,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock i3lock-fancy network-manager kitty psmisc rofi pcmanfm tlp font-manager gvfs-backends nitrogen dunst cups smbclient lxpolkit xbacklight lxappearance htop mc xarchiver mpv feh sxiv pulseaudio pulsemixer npm curl tmux imagemagick scrot firefox-esr
 
 # Software & Packages
-sudo apt install -y ranger neovim flameshot cmus ncmpcpp notify-osd neofetch flatpak cava obs-studio freerdp2-x11
+sudo apt install -y ranger neovim flameshot moc notify-osd neofetch flatpak cava obs-studio freerdp2-x11
 
 # More Software & Packages ON / OFF
 sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-style-breeze libreoffice-l10n-da inkscape gimp rawtherapee darktable okular
@@ -32,6 +32,6 @@ sudo apt install -y papirus-icon-theme breeze-cursor-theme gnome-themes-extra
 
 
 # Other packages not included or removed 
-# virt-manager xscreensaver thunar thunar-archive-plugin thunar-font-manager
+# virt-manager xscreensaver thunar thunar-archive-plugin thunar-font-manager cmus ncmpcpp
 # qt5ct .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
 
