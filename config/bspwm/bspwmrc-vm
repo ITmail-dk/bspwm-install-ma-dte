@@ -59,8 +59,6 @@ bspc rule -a Inkscape desktop='^7' follow=on border=off
 bspc rule -a mpv desktop='^5' state=floating
 
 
-
-
 # Automatically start up programs.
 picom &
 #feh --bg-fill ~/wallpapers/default-wallpaper.jpg &
