@@ -145,7 +145,7 @@ cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus-Light/* ~/.
 
 mkdir ~/.config/gtk-3.0
 cp ~/bspwm-install-ma-dte/themes/gtk-3.0/settings.ini ~/.config/gtk-3.0
-
+cp ~/bspwm-install-ma-dte/themes/.gtkrc-2.0 ~/
 
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
