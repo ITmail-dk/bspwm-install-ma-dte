@@ -16,7 +16,7 @@ sleep 3
 sudo apt update && sudo apt upgrade -y
 
 # Core packages to be installed
-sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock i3lock-fancy network-manager kitty psmisc rofi pcmanfm tlp font-manager gvfs-backends nitrogen dunst cups smbclient lxpolkit xbacklight lxappearance htop mc xarchiver mpv feh sxiv pulseaudio pulsemixer npm curl tmux imagemagick scrot firefox-esr
+sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager kitty psmisc rofi pcmanfm tlp font-manager gvfs-backends nitrogen dunst cups smbclient lxpolkit xbacklight lxappearance htop mc xarchiver mpv feh sxiv pulseaudio pulsemixer npm curl tmux imagemagick scrot firefox-esr
 
 # Software & Packages
 sudo apt install -y ranger neovim flameshot moc notify-osd neofetch flatpak cava obs-studio freerdp2-x11
@@ -32,6 +32,6 @@ sudo apt install -y papirus-icon-theme breeze-cursor-theme gnome-themes-extra
 
 
 # Other packages not included or removed 
-# virt-manager xscreensaver thunar thunar-archive-plugin thunar-font-manager cmus ncmpcpp
+# virt-manager xscreensaver thunar thunar-archive-plugin thunar-font-manager cmus ncmpcpp xidle i3lock-fancy
 # qt5ct .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
 

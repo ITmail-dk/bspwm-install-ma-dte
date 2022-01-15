@@ -64,11 +64,10 @@ bspc rule -a mpv desktop='^5' state=floating
 
 # Automatically start up programs.
 picom &
-#feh --bg-fill ~/wallpapers/default-wallpaper.jpg &
 nitrogen --restore &
-#pulseaudio --kill &
-#sleep 3
-#pulseaudio --start &
-xscreensaver -nosplash &
-#sleep 2
+
 $HOME/.config/polybar/run-polybar.sh &
+
+# lock computer automatically after X time of minutes.
+xautolock -time 15 -locker "xsecurelock" -detectsleep -secure &
+#xscreensaver -nosplash &

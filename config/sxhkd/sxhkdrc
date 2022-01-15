@@ -40,7 +40,7 @@ super + ctrl + alt + w
 
 #######   lock computer  #######
 super + l
-	i3lock-fancy -gp -- scrot -z
+	xsecurelock
 
 
 
