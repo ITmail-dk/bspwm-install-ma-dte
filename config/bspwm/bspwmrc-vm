@@ -66,6 +66,8 @@ nitrogen --restore &
 #pulseaudio --kill &
 #sleep 3
 #pulseaudio --start &
-xscreensaver -nosplash &
+#xscreensaver -nosplash &
 #sleep 2
 $HOME/.config/polybar/run-polybar.sh &
+
+xautolock -time 2 -locker "i3lock-fancy -gp -- scrot" -detectsleep &
