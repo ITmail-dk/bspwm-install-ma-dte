@@ -22,7 +22,7 @@ sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd s
 sudo apt install -y ranger neovim flameshot moc notify-osd neofetch flatpak cava obs-studio freerdp2-x11
 
 # More Software & Packages ON / OFF
-sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-style-breeze libreoffice-l10n-da inkscape gimp rawtherapee darktable okular
+sudo apt install -y zsh git wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-style-breeze libreoffice-l10n-da inkscape gimp rawtherapee darktable okular scribus
 
 # Maybe maybe Software & Packages ON / OFF
 #sudo apt install -y 
