@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #APT UPDATE & APT UPGRADE
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     APT + Alacritty - Building and installing"
-echo "     Enter your user password, to continue."
+echo "     Enter your user password, to continue if necessary"
 echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y cmake cargo pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
@@ -46,16 +46,20 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-"
 
 
 
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     Add Desktop Entry."
 echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "     Enter your user password, to continue if necessary"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 sudo cp target/release/alacritty /usr/local/bin
 sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
 sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
+
+cd ~/bspwm-install-ma-dte
 
 read -p "Alacritty Install - ALL DONE - Press a key to Exit"
 
