@@ -15,7 +15,7 @@ systemctl --user enable pulseaudio
 . ~/bspwm-install-ma-dte/install-scripts/apt-install-software-last-packages.sh
 
 # Last step setup menu installing.
-. ~/bspwm-install-ma-dte/install-menu.sh
+. ~/bspwm-install-ma-dte/last-step-setup-menu.sh
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
