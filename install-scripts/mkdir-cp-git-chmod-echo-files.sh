@@ -134,12 +134,23 @@ cp -r ~/bspwm-install-ma-dte/themes/themes-de/* ~/.themes/
 mkdir ~/.icons/Nordzy-cursors
 cp -r ~/bspwm-install-ma-dte/themes/cursors/Nordzy-cursors-theme/Nordzy-cursors/* ~/.icons/Nordzy-cursors
 
+mkdir ~/.icons/Papirus
 mkdir ~/.icons/Papirus-Dark
+mkdir ~/.icons/Papirus-Light
+cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus/* ~/.icons/Papirus
 cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus-Dark/* ~/.icons/Papirus-Dark
+cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus-Light/* ~/.icons/Papirus-Light
 
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "          All DONE - User + .config files..."
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+
+mkdir ~/.config/gtk-3.0
+cp ~/bspwm-install-ma-dte/themes/gtk-3.0/settings.ini ~/.config/gtk-3.0
+
+
+
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "          All DONE - User + .config files..."
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 

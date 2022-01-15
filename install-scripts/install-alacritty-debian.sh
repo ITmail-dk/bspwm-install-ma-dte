@@ -61,6 +61,6 @@ sudo update-desktop-database
 
 cd ~/bspwm-install-ma-dte
 
-read -p "Alacritty Install - ALL DONE - Press a key to Exit"
+echo "Alacritty Install - ALL DONE"
 
 
