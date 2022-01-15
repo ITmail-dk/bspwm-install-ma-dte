@@ -6,6 +6,6 @@ chosen=$(printf "  Power Off\n  Restart\n  Lock" | rofi -dmenu -i -them
 case "$chosen" in
 	"  Power Off") systemctl poweroff ;;
 	"  Restart") systemctl reboot ;;
-	"  Lock") i3lock-fancy -gp -- scrot -z ;;
+	"  Lock") xsecurelock ;;
 	*) exit 1 ;;
 esac
