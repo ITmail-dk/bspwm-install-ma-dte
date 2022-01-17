@@ -47,6 +47,7 @@ darktable
 okular
 scribus
 obs-studio
+timeshift
 freerdp
 wireguard
 
