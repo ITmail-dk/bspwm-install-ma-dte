@@ -24,7 +24,7 @@ Here is what the command line does, it installs the GIT package an goes to your 
 `sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && . ~/bspwm-install-ma-dte/install.sh`
 
 
-**Or you can do it line by line here it's entirely up to you And what you think is easiest...**
+*Or you can do it line by line here it's entirely up to you And what you think is easiest...*
 
 `sudo apt install -y git`
 
