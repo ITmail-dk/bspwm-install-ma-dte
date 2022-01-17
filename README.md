@@ -18,7 +18,7 @@ Link.: https://www.ventoy.net/en/index.html
 ## Remember to install Debian without the desktop environment.
 After installation, Reboot the computer and login with your new user.
 
-![Setup / Install GiF](https://github.com/ITmail-dk/bspwm-install-ma-dte/screenshots/install-gif.gif "Setup / Install")
+![Setup / Install GiF](https://github.com/ITmail-dk/bspwm-install-ma-dte/raw/main/screenshots/install-gif.gif "Setup / Install")
 
 
 
