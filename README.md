@@ -3,6 +3,8 @@
 # BSPwm Install - Martin Desktop Environment
 An easy and quickly way to get up and running in the BSPwm desktop environment plus keybindings and some standard software such as polybar, pulseaudio, Google Chrome, firefox, nitrogen ... the recipe here is to move on once you have installed a base operating system, there are different versions for different systems see description.
 
+![BSPwm Install - Martin Desktop Environment](https://github.com/ITmail-dk/bspwm-install-ma-dte/raw/main/screenshots/Desktop_2022-01-17%20151851.jpg "BSPwm Install - Martin Desktop Environment")
+
 
 ## Debian Linux - Git + Install
 Start the installation as regular users with SUDO rights from your home directory
