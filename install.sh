@@ -9,9 +9,9 @@ sudo apt update && sudo apt install -y dialog
 HEIGHT=35
 WIDTH=80
 CHOICE_HEIGHT=5
-BACKTITLE="Martin BSPwm DTE - The installation"
+BACKTITLE="The installation of Martin BSPwm DTE on Debian"
 TITLE="Martin DTE - BSPwm installation"
-MENU="Choose you system from the following options:"
+MENU="Choose you system from the following:"
 
 OPTIONS=(1 "AMD System"
          2 "AMD System + NVIDIA GPU"
