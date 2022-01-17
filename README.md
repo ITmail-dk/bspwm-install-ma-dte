@@ -20,6 +20,6 @@ After installation, Reboot the computer and login with your new user.
 
 ### And run this Command line to install everything:
 
-sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && . ~/bspwm-install-ma-dte/install.sh
+`sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && . ~/bspwm-install-ma-dte/install.sh`
 
 Here is what the command line does, it installs the GIT package an goes to your home directory and clones the installation from git and runs the installation script afterwards.
