@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# APT Update & apt upgrade
+sudo apt update && sudo apt install -y dialog
+
+
 # Remember that this menu uses this apt package "dialog"
 
 HEIGHT=35
