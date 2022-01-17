@@ -18,13 +18,18 @@ Link.: https://www.ventoy.net/en/index.html
 ## Remember to install Debian without the desktop environment.
 After installation, Reboot the computer and login with your new user.
 
+![Setup / Install GiF](https://github.com/ITmail-dk/bspwm-install-ma-dte/screenshots/install-gif.gif "Setup / Install")
+
+
+
+
 ### And run this Command line to install everything.
 Here is what the command line does, it installs the GIT package an goes to your home directory and clones the installation from git and runs the installation script afterwards.
 
 `sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && . ~/bspwm-install-ma-dte/install.sh`
 
 
-*Or you can do it line by line here it's entirely up to you And what you think is easiest...*
+*Or you can do it line by line here, it's entirely up to you... And what you think is easiest.*
 
 `sudo apt install -y git`
 
