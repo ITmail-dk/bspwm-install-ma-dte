@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Creates folders."
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Creates folders."
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 mkdir ~/.config
 mkdir ~/.themes
 mkdir ~/.fonts
@@ -29,11 +29,11 @@ mkdir ~/Music
 #read -p "Troubleshooting - Press a key to continue the installation."
 
 #Copy files to...
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Copy files to..."
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Copy files to..."
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
@@ -75,11 +75,11 @@ echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 
 
 #chmod +x files.
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     chmod +x files."
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     chmod +x files."
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 chmod +x ~/.config/bspwm/bspwmrc
 chmod +x ~/.config/sxhkd/sxhkdrc
@@ -105,11 +105,11 @@ chmod +x ~/.config/rofi/rofi-beats.sh
 #tar -xf themes/cursors/Nordzy-cursors.tar.gz -C ~/.icons/
 
 #Git Clone files.
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Git Clone - Downloads"
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Git Clone - Downloads"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 #git clone https://github.com/LINK Nordic-Theme Specific-folder
 
@@ -119,11 +119,11 @@ git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme ~/bspwm-i
 
 
 #Copy Theme files...
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Copy Theme files..."
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Copy Theme files..."
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 #cp -r ~/bspwm-install-ma-dte/themes/themes-de/* ~/.themes/
 #cp -r ~/bspwm-install-ma-dte/themes/cursors/* ~/.icons/
@@ -141,8 +141,6 @@ cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus/* ~/.icons/
 cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus-Dark/* ~/.icons/Papirus-Dark
 cp -r ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme/Papirus-Light/* ~/.icons/Papirus-Light
 
-
-
 mkdir ~/.config/gtk-3.0
 cp ~/bspwm-install-ma-dte/themes/gtk-3.0/settings.ini ~/.config/gtk-3.0
 cp ~/bspwm-install-ma-dte/themes/.gtkrc-2.0 ~/
@@ -153,4 +151,3 @@ echo " "
 echo "          All DONE - User + .config files..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-
