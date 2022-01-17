@@ -34,8 +34,8 @@ Or you can do it line by line here it's entirely up to you And what you think is
 `. ~/bspwm-install-ma-dte/install.sh`
 
 
-#### Software
-Here are a good portion of the software that gets installed during the installation.
+#### Here is a list of software that will be installed from the start
+so you should be up and running when the installation is complete.
 
 kitty
 alacritty
