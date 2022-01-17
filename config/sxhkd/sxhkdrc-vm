@@ -38,7 +38,7 @@ shift + ctrl + alt + w
 	. ~/.config/rofi/rofi-wifi-menu.sh
 
 #######   lock computer  #######
-super + l
+alt + l
 	xsecurelock
 
 #

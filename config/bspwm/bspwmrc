@@ -57,9 +57,10 @@ bspc rule -a Screenkey manage=off
 
 bspc rule -a Google-chrome desktop='^2' follow=on border=off
 bspc rule -a Firefox desktop='^2' follow=on border=off
-bspc rule -a Gimp desktop='^6' follow=on layer=above border=off
-bspc rule -a Inkscape desktop='^7' follow=on border=off
-bspc rule -a mpv desktop='^5' state=floating
+bspc rule -a Gimp desktop='^7' follow=on layer=above border=off
+bspc rule -a Inkscape desktop='^8' follow=on border=off
+bspc rule -a LibreCAD desktop='^9' follow=on border=off
+bspc rule -a mpv desktop='^10' state=floating
 
 
 # Automatically start up programs.

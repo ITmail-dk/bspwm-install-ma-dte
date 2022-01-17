@@ -15,18 +15,18 @@ systemctl --user enable pulseaudio
 . ~/bspwm-install-ma-dte/install-scripts/apt-install-software-last-packages.sh
 
 # Last step setup menu installing.
-. ~/bspwm-install-ma-dte/last-step-setup-menu.sh
+#. ~/bspwm-install-ma-dte/last-step-setup-menu.sh
 
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-echo " "
-echo " "
-echo "     Enter your user password, to continue if necessary"
-echo " "
-echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo " "
+#echo " "
+#echo "     Enter your user password, to continue if necessary"
+#echo " "
+#echo " "
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-sleep 1
+#sleep 1
 
-read -p "You are ready to reboot... Press [Enter] key to Reboot System."
+#read -p "You are ready to reboot... Press [Enter] key to Reboot System."
 
-systemctl rebootcd ..
+#systemctl rebootcd ..
