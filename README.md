@@ -50,5 +50,4 @@ obs-studio
 timeshift
 freerdp
 wireguard
-
-etc...
+ etc...
