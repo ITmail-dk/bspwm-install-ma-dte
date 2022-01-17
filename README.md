@@ -37,26 +37,4 @@ Or you can do it line by line here it's entirely up to you And what you think is
 #### Here is a list of software that will be installed from the start
 so you should be up and running when the installation is complete.
 
-kitty
-alacritty
-pcmanfm
-rofi
-nitrogen
-lxappearance
-neovim
-google chrome
-firefox
-ranger
-font-manager
-libreoffice
-inkscape
-gimp
-rawtherapee
-darktable
-okular
-scribus
-obs-studio
-timeshift
-freerdp
-wireguard
- etc...
+kitty, alacritty, pcmanfm, rofi, nitrogen, lxappearance, neovim, google chrome, firefox, ranger, font-manager, libreoffice, inkscape, gimp, rawtherapee, darktable, okular, scribus, obs-studio, timeshift, freerdp, wireguard, etc...
