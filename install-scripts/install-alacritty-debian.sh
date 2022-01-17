@@ -16,7 +16,7 @@ echo " "
 echo "     Create folders."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
-mkdir ~/.config/alacritty
+#mkdir ~/.config/alacritty
 mkdir ~/make
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
