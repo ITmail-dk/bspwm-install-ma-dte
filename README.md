@@ -15,11 +15,11 @@ https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/wee
 Just copy multiple ISO files to the USB drive and boot them directly, It's just such a great tool.
 Link.: https://www.ventoy.net/en/index.html
 
-## Remember to install Debian without the desktop environment.
+#### Remember to install Debian without the desktop environment.
 After installation, Reboot the computer and login with your new user.
 ![Install Debian without Desktop Environment](https://github.com/ITmail-dk/bspwm-install-ma-dte/raw/main/screenshots/NO-DE_2022-01-17_145020.jpg "Debian without Desktop Environment")
 
-
+##### installation gif
 ![Setup / Install GiF](https://github.com/ITmail-dk/bspwm-install-ma-dte/raw/main/screenshots/install-gif.gif "Setup / Install")
 
 
