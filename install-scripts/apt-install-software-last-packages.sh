@@ -22,13 +22,6 @@ sudo apt install -y wireguard wireguard-tools libreoffice libreoffice-gtk3 libre
 # virt-manager xscreensaver thunar thunar-archive-plugin thunar-font-manager cmus ncmpcpp xidle i3lock-fancy
 # qt5ct .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
 
-
-# Google Chrome - Download + Install  ON / OFF
-rm google-chrome-stable_current_amd64.deb
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
-
-
 # Alacritty - Building and installing ON / OFF
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
