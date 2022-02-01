@@ -24,11 +24,11 @@ sudo apt install -y wireguard wireguard-tools libreoffice libreoffice-gtk3 libre
 
 # Alacritty - Building and installing ON / OFF
 
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-echo " "
-echo "     Alacritty - Building and installing"
-echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+#echo " "
+#echo "     Alacritty - Building and installing"
+#echo " "
+#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 # Alacritty - Building and installing ON / OFF
-. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
+#. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
