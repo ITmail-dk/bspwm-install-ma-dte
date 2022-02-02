@@ -60,6 +60,7 @@ bspc rule -a Firefox desktop='^2' follow=on border=off
 bspc rule -a Gimp desktop='^7' follow=on layer=above border=off
 bspc rule -a Inkscape desktop='^8' follow=on border=off
 bspc rule -a LibreCAD desktop='^9' follow=on border=off
+bspc rule -a Steam desktop='^9' follow=on border=off
 bspc rule -a mpv desktop='^10' state=floating
 
 
