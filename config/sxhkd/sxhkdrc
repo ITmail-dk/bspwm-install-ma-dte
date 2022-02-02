@@ -2,9 +2,11 @@
 #        Hotkey - Config
 #
 ###################################
-# Reload sxhkd config file.
+#       Reload sxhkd config       #
+
 super + alt + ctrl + Escape
 	pkill -USR1 -x sxhkd
+
 ###################################
 
 # Terminal´s primary and secondary.
@@ -36,14 +38,18 @@ super + b
 super + shift + b
 	firefox
 
-# File Manager
+super + shift + f
+	flameshot
+
+
+# File Manager ##########################
 super + e
 	pcmanfm
 
 super + shift + e
 	thunar
 
-# Audio / Music
+# Audio / Music #########################
 
 super + alt + ctrl + a
 	kitty -e pulsemixer
@@ -66,7 +72,6 @@ XF86AudioLowerVolume
 
 XF86AudioMute
     pulsemixer --toggle-mute
-
 
 super + ctrl + alt + m
 	kitty -e mocp
