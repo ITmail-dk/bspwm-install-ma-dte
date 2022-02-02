@@ -15,9 +15,20 @@ super + shift + Return
 	alacritty
 
 
-# Rofi program launcher.
+# Rofi launcher # # # # # # # # # # # # #
 super + r
 	rofi -show run
+
+super + shift + r
+	rofi -modi "run,window,file-browser,ssh" -show run
+
+super + ctrl + m
+	. ~/.config/rofi/rofi-beats.sh
+
+super + ctrl + alt + w
+	. ~/.config/rofi/rofi-wifi-menu.sh
+
+# Rofi launcher # # # # # # # # # # # # #
 
 super + b
 	google-chrome
@@ -31,22 +42,29 @@ super + e
 super + alt + ctrl + a
 	kitty -e pulsemixer
 
-super + ctrl + m
-	. ~/.config/rofi/rofi-beats.sh
 
-super + ctrl + alt + w
-	. ~/.config/rofi/rofi-wifi-menu.sh
 
 
 #######   lock computer  #######
 super + l
 	xsecurelock
+#######   lock computer  #######
 
+#
+#
+#
+#  888888b.    .d8888b.  8888888b.                                   888    888          888    888                                 
+#  888  "88b  d88P  Y88b 888   Y88b                                  888    888          888    888                                 
+#  888  .88P  Y88b.      888    888                                  888    888          888    888                                 
+#  8888888K.   "Y888b.   888   d88P 888  888  888 88888b.d88b.       8888888888  .d88b.  888888 888  888  .d88b.  888  888 .d8888b  
+#  888  "Y88b     "Y88b. 8888888P"  888  888  888 888 "888 "88b      888    888 d88""88b 888    888 .88P d8P  Y8b 888  888 88K      
+#  888    888       "888 888        888  888  888 888  888  888      888    888 888  888 888    888888K  88888888 888  888 "Y8888b. 
+#  888   d88P Y88b  d88P 888        Y88b 888 d88P 888  888  888      888    888 Y88..88P Y88b.  888 "88b Y8b.     Y88b 888      X88 
+#  8888888P"   "Y8888P"  888         "Y8888888P"  888  888  888      888    888  "Y88P"   "Y888 888  888  "Y8888   "Y88888  88888P' 
+#                                                                                                                      888          
+#                                                                                                                 Y8b d88P          
+#                                                                                                                  "Y88P"           
 
-
-# # # # # # # # # # #
-#   BSPwm Hotkeys   #
-# # # # # # # # # # #
 
 # quit/restart bspwm
 super + alt + ctrl + {q,r}
@@ -57,16 +75,16 @@ super + {_,shift + }w
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
-#super + m
-#	bspc desktop -l next
+super + m
+	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
-#super + y
-#	bspc node newest.marked.local -n newest.!automatic.local
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest window
-#super + g
-#	bspc node -s biggest.window
+super + g
+	bspc node -s biggest.window
 
 #
 # State / Flags
@@ -89,8 +107,8 @@ super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-#super + {p,b,comma,period}
-#	bspc node -f @{parent,brother,first,second}
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
@@ -101,14 +119,14 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-#super + {grave,Tab}
-#	bspc {node,desktop} -f last
+super + {grave,Tab}
+	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
-#super + {o,i}
-#	bspc wm -h off; \
-#	bspc node {older,newer} -f; \
-#	bspc wm -h on
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
@@ -151,10 +169,19 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-50 0,0 50,0 -50,50 0}
 
 
-#####################################
-#                                   #
-#        Media-keys / Volume        #
-#                                   #
+
+#                                                                                                                      
+#  88b           d88                       88  88                        88                                            
+#  888b         d888                       88  ""                        88                                            
+#  88`8b       d8'88                       88                            88                                            
+#  88 `8b     d8' 88   ,adPPYba,   ,adPPYb,88  88  ,adPPYYba,            88   ,d8   ,adPPYba,  8b       d8  ,adPPYba,  
+#  88  `8b   d8'  88  a8P_____88  a8"    `Y88  88  ""     `Y8  aaaaaaaa  88 ,a8"   a8P_____88  `8b     d8'  I8[    ""  
+#  88   `8b d8'   88  8PP"""""""  8b       88  88  ,adPPPPP88  """"""""  8888[     8PP"""""""   `8b   d8'    `"Y8ba,   
+#  88    `888'    88  "8b,   ,aa  "8a,   ,d88  88  88,    ,88            88`"Yba,  "8b,   ,aa    `8b,d8'    aa    ]8I  
+#  88     `8'     88   `"Ybbd8"'   `"8bbdP"Y8  88  `"8bbdP"Y8            88   `Y8a  `"Ybbd8"'      Y88'     `"YbbdP"'  
+#                                                                                                  d8'                 
+#                                                                                                 d8'                  
+#
 
 super + alt + Up
 	amixer -D pulse sset Master 5%+
@@ -162,7 +189,5 @@ super + alt + Up
 super + alt + Down
 	amixer -D pulse sset Master 5%-
 
-
-#                                   #
-#####################################
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
