@@ -18,7 +18,7 @@ sudo apt update && sudo apt upgrade -y
 echo "Enter your user password, to continue if necessary"
 
 # Core packages to be installed
-sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock caffeine network-manager git kitty psmisc rofi pcmanfm tlp font-manager gvfs-backends nitrogen dunst cups smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer moc mpv npm cava curl tmux imagemagick feh sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift
+sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock caffeine network-manager git kitty psmisc rofi pcmanfm tlp font-manager gvfs-backends nitrogen dunst cups smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer moc mpv npm cava curl tmux imagemagick feh sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename
 
 # Google Chrome - Download + Install  ON / OFF
 rm google-chrome-stable_current_amd64.deb

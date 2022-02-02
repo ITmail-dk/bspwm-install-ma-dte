@@ -13,14 +13,11 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 3
 
 # Software & Packages
-sudo apt install -y wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-l10n-da inkscape gimp rawtherapee darktable okular scribus obs-studio freerdp2-x11
+sudo apt install -y wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-l10n-da inkscape gimp rawtherapee darktable okular scribus obs-studio freerdp2-x11 thunar thunar-archive-plugin thunar-font-manager
 
 # Maybe maybe Software & Packages ON / OFF
 #sudo apt install -y 
 
-# Other packages not included or removed 
-# virt-manager xscreensaver thunar thunar-archive-plugin thunar-font-manager cmus ncmpcpp xidle i3lock-fancy
-# qt5ct .profile add export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # Alacritty - Building and installing ON / OFF
 
