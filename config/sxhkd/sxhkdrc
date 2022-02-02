@@ -36,14 +36,26 @@ super + b
 super + shift + b
 	firefox
 
+# File Manager
 super + e
 	pcmanfm
+
+super + shift + e
+	thunar
+
+# Audio / Music
 
 super + alt + ctrl + a
 	kitty -e pulsemixer
 
+super + alt + Up
+	amixer -D pulse sset Master 5%+
 
+super + alt + Down
+	amixer -D pulse sset Master 5%-
 
+super + alt + m
+	kitty -e mocp
 
 #######   lock computer  #######
 super + l
@@ -167,27 +179,3 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-50 0,0 50,0 -50,50 0}
-
-
-
-#                                                                                                                      
-#  88b           d88                       88  88                        88                                            
-#  888b         d888                       88  ""                        88                                            
-#  88`8b       d8'88                       88                            88                                            
-#  88 `8b     d8' 88   ,adPPYba,   ,adPPYb,88  88  ,adPPYYba,            88   ,d8   ,adPPYba,  8b       d8  ,adPPYba,  
-#  88  `8b   d8'  88  a8P_____88  a8"    `Y88  88  ""     `Y8  aaaaaaaa  88 ,a8"   a8P_____88  `8b     d8'  I8[    ""  
-#  88   `8b d8'   88  8PP"""""""  8b       88  88  ,adPPPPP88  """"""""  8888[     8PP"""""""   `8b   d8'    `"Y8ba,   
-#  88    `888'    88  "8b,   ,aa  "8a,   ,d88  88  88,    ,88            88`"Yba,  "8b,   ,aa    `8b,d8'    aa    ]8I  
-#  88     `8'     88   `"Ybbd8"'   `"8bbdP"Y8  88  `"8bbdP"Y8            88   `Y8a  `"Ybbd8"'      Y88'     `"YbbdP"'  
-#                                                                                                  d8'                 
-#                                                                                                 d8'                  
-#
-
-super + alt + Up
-	amixer -D pulse sset Master 5%+
-
-super + alt + Down
-	amixer -D pulse sset Master 5%-
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
