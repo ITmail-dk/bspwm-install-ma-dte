@@ -48,13 +48,27 @@ super + shift + e
 super + alt + ctrl + a
 	kitty -e pulsemixer
 
+super + alt + m
+	pulsemixer --toggle-mute
+
 super + alt + Up
-	amixer -D pulse sset Master 5%+
+	pulsemixer --change-volume +5
 
 super + alt + Down
-	amixer -D pulse sset Master 5%-
+	pulsemixer --change-volume -5
 
-super + alt + m
+
+XF86AudioRaiseVolume
+    pulsemixer --change-volume +5
+
+XF86AudioLowerVolume
+    pulsemixer --change-volume -5
+
+XF86AudioMute
+    pulsemixer --toggle-mute
+
+
+super + ctrl + alt + m
 	kitty -e mocp
 
 #######   lock computer  #######
