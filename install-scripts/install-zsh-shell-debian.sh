@@ -27,5 +27,5 @@ echo $SHELL
 $SHELL --version
 
 cd ~/bspwm-install-ma-dte
-
+clear
 read -p "ZSH Shell Install - ALL DONE - Press a key to Exit"

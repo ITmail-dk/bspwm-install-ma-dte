@@ -24,7 +24,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 
 cd ~/bspwm-install-ma-dte
-
+clear
 read -p "Press a key to Exit"
 
 exit

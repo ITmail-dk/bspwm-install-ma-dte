@@ -3,7 +3,7 @@
 # APT UPDATE & APT UPGRADE
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
-echo "     Hugo Extended v0.91.2 - Install"
+echo "     Hugo Extended - Install"
 echo "     Before we Install we run an update..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -28,5 +28,5 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 
 cd ~/bspwm-install-ma-dte
-
+clear
 read -p "Press a key to Exit"

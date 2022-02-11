@@ -60,7 +60,7 @@ sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
 
 cd ~/bspwm-install-ma-dte
-
+clear
 echo "Alacritty Install - ALL DONE"
 
 

@@ -13,19 +13,19 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 3
 
 # Software & Packages
-sudo apt install -y wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-l10n-da inkscape gimp rawtherapee darktable okular scribus obs-studio freerdp2-x11 thunar thunar-archive-plugin thunar-font-manager
+sudo apt install -y wireguard wireguard-tools libreoffice libreoffice-gtk3 libreoffice-l10n-da inkscape gimp rawtherapee darktable okular scribus obs-studio freerdp2-x11 freerdp2-shadow-x11 thunar thunar-archive-plugin thunar-font-manager
 
 # Maybe maybe Software & Packages ON / OFF
 #sudo apt install -y 
 
 
 # Alacritty - Building and installing ON / OFF
-
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Alacritty - Building and installing"
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+clear
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Alacritty - Building and installing"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 # Alacritty - Building and installing ON / OFF
-#. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
+. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
