@@ -7,7 +7,7 @@ sudo apt update && sudo apt install -y dialog git
 
 HEIGHT=35
 WIDTH=80
-CHOICE_HEIGHT=5
+CHOICE_HEIGHT=10
 BACKTITLE="The installation of Martin BSPwm DTE on Debian"
 TITLE="Martin DTE - BSPwm installation"
 MENU="Choose you system from the following:"
