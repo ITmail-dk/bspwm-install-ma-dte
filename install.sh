@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # APT Update & apt upgrade
 sudo apt update && sudo apt install -y dialog git

@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # Remember that this menu uses this apt package "dialog"
 

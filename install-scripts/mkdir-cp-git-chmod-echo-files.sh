@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."

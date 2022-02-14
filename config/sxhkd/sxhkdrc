@@ -1,4 +1,4 @@
-#
+﻿#
 # SXHKD Hotkey's config.
 #
 # Reload SXHKD Config.
@@ -8,7 +8,7 @@ super + shift + ctrl + alt + Escape
 
 ###################################
 
-# Terminal´s primary and secondary.
+# TerminalĀ“s primary and secondary.
 super + Return
 	kitty
 

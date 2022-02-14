@@ -1,4 +1,4 @@
-# BSPwm Install - Martin Desktop Environment
+﻿# BSPwm Install - Martin Desktop Environment
 An easy and quick way to get up and running in the BSPwm desktop environment with keybindings and some standard software such as polybar, pulseaudio, Google Chrome, firefox, nitrogen, libreoffice, inkscape, gimp, rawtherapee, darktable etc... Installation time depends on your internet speed, but in about 25 minutes Are you up and running with a full Debian with BSPwm.
 
 ![BSPwm Install - Martin Desktop Environment](https://github.com/ITmail-dk/bspwm-install-ma-dte/raw/main/screenshots/Desktop_2022-01-17_151851.jpg "BSPwm Install - Martin Desktop Environment")

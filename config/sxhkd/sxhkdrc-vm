@@ -1,4 +1,4 @@
-#
+﻿#
 #        Hotkey - Config
 #
 ###################################
@@ -7,7 +7,7 @@ alt + shift + ctrl + Escape
 	pkill -USR1 -x sxhkd
 ###################################
 
-# Terminal´s primary and secondary.
+# TerminalĀ“s primary and secondary.
 alt + Return
 	kitty
 
