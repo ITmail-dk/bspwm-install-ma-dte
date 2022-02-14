@@ -17,7 +17,8 @@ OPTIONS=(1 "AMD System"
          3 "Intel System"
          4 "Intel System + NVIDIA GPU"
          5 "Virtual Machine System - SUPER KEY to ALT KEY"
-         6 "Exit, Do nothing and Reboot")
+         6 "Minimal Install (NO MICROCODE OR GPU DRIVERS AND SOFTWARE)"
+         7 "Exit, Do nothing and Reboot")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -45,6 +46,9 @@ case $CHOICE in
             . ~/bspwm-install-ma-dte/install-ma-dte-debian.sh && . ~/bspwm-install-ma-dte/install-scripts/vm-install-mics.sh && systemctl reboot
             ;;
         6)
+            . ~/bspwm-install-ma-dte/install-ma-dte-debian-minimal.sh && systemctl reboot
+            ;;
+        7)
             systemctl reboot
             ;;
 esac

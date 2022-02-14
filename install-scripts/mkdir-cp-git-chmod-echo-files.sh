@@ -59,6 +59,8 @@ sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non
 
 echo "     Add UPUP alias to bash under bash_aliases config."
 touch ~/.bash_aliases
+echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bash_aliases
+echo 'alias vi="nvim"' >> ~/.bash_aliases
 echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> ~/.bash_aliases
 
 # Echo Nitrogen config to files.

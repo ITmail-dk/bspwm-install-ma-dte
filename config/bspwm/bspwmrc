@@ -73,7 +73,7 @@ bspc rule -a Mozilla Firefox desktop=^2 follow=on border=off
 bspc rule -a Gimp desktop=^6 follow=on layer=above border=off
 bspc rule -a Inkscape desktop=^7 follow=on border=off
 bspc rule -a LibreCAD desktop=^7 follow=on border=off
-bspc rule -a mpv desktop=^9 state=floating
+bspc rule -a mpv desktop=^9 state=floating follow=on
 bspc rule -a Code desktop=^3 follow=on  border=off
 bspc rule -a TeamViewer desktop=^8 state=floating follow=on border=off
 
@@ -85,7 +85,6 @@ picom &
 nitrogen --restore &
 
 $HOME/.config/polybar/run-polybar.sh &
-#caffeine &
 
 # lock computer automatically after X time of minutes.
 xautolock -time 120 -locker "xsecurelock" -detectsleep -secure &

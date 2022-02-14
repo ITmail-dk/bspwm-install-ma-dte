@@ -16,3 +16,5 @@ systemctl --user enable pulseaudio
 
 # Last step setup menu installing.
 #. ~/bspwm-install-ma-dte/last-step-setup-menu.sh
+
+# Test

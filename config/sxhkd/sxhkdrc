@@ -1,7 +1,6 @@
 #
 # SXHKD Hotkey's config.
 #
-###################################
 # Reload SXHKD Config.
 
 super + shift + ctrl + alt + Escape
@@ -11,10 +10,10 @@ super + shift + ctrl + alt + Escape
 
 # Terminal´s primary and secondary.
 super + Return
-	alacritty
+	kitty
 
 super + shift + Return
-	kitty
+	alacritty
 
 
 # Rofi launcher - Start # # # # # # # # # # # # # # # # # #
@@ -46,7 +45,7 @@ super + e
 super + shift + e
 	thunar
 
-# Steam
+# Steam (flatpak run)
 super + alt + s
 	flatpak run com.valvesoftware.Steam
 
@@ -64,7 +63,6 @@ super + alt + Up
 super + alt + Down
         pulsemixer --change-volume -5
 
-
 XF86AudioRaiseVolume
     pulsemixer --change-volume +5
 
@@ -74,16 +72,18 @@ XF86AudioLowerVolume
 XF86AudioMute
     pulsemixer --toggle-mute
 
-
 super + ctrl + alt + m
-        kitty -e mocp
+    kitty -e mocp
+
+# Open .config folder in VS Code
+super + ctrl + alt + c
+    kitty -e code ~/.config/
 
 
-
-#######   lock computer  #######
+# lock computer
 super + l
 	xsecurelock
-#######   lock computer  #######
+
 
 #
 #
