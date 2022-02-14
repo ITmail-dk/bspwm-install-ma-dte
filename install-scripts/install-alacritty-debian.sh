@@ -63,4 +63,3 @@ cd ~/bspwm-install-ma-dte
 clear
 echo "Alacritty Install - ALL DONE"
 
-

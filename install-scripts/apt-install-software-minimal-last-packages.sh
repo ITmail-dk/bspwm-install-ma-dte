@@ -29,3 +29,4 @@ clear
 
 # Alacritty - Building and installing ON / OFF
 #. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
+
