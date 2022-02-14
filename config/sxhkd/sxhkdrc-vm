@@ -43,8 +43,6 @@ alt + shift + ctrl + a
 	kitty -e pulsemixer
 
 
-
-
 #######   lock computer  #######
 alt + l
 	xsecurelock

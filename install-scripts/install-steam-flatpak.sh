@@ -23,5 +23,3 @@ flatpak install flathub com.valvesoftware.Steam
 
 clear
 echo " # # # # # RUN STEAM CORMAND: flatpak run com.valvesoftware.Steam"
-
-

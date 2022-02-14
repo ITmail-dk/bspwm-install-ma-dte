@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # https://github.com/ericmurphyxyz/archrice
 
 notify-send "Getting list of available Wi-Fi networks..."

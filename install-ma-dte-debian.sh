@@ -1,5 +1,4 @@
 #!/bin/bash
-
 cd ~/bspwm-install-ma-dte
 
 # Do, mkdir, copy, copy, echo files.

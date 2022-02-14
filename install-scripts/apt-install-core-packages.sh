@@ -11,7 +11,6 @@ echo "     continues the software installation in 3 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 3
-
 # APT Update & apt upgrade
 sudo apt update && sudo apt upgrade -y
 
