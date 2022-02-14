@@ -10,23 +10,23 @@ Run command: inxi -G
 #*_#*_#*_*#_*#_*#_*
 
     AMD GPU
-
+    
 -.-.-.-.-.-.-.-.-.-
 
 sudo nano /etc/X11/xorg.conf.d/20-amdgpu.conf
 
 Section "Device"
         Identifier      "AMD Graphics"
-        Driver          "amdgpu"
-        Option          "TearFree" "true"
-EndSection
+                Driver          "amdgpu"
+                Option          "TearFree" "true"
+        EndSection
 
 
 
 #*_#*_#*_*#_*#_*#_*#_*#_*#_#*_#*_#*_#*_#*_#*_#*#_*#_#*_#*_#*
 
     nVidia GPU Composition Pipeline / X Server Settings
-
+    
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 
 sudo nvidia-settings
