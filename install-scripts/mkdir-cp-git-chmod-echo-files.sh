@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
@@ -29,7 +29,7 @@ mkdir ~/Music
 
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 #Copy files to...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -47,7 +47,7 @@ cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 cp ~/bspwm-install-ma-dte/local-files/.Xresources ~/
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 # Echo config to files. YES / NO
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -67,7 +67,7 @@ echo 'alias vi="nvim"' >> ~/.bash_aliases
 echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> ~/.bash_aliases
 
 # Echo Nitrogen config to files.
-echo "dirs=$HOME/wallpapers/1080p;" >> ~/.config/nitrogen/nitrogen.cfg
+#echo "dirs=$HOME/wallpapers/1080p;" >> ~/.config/nitrogen/nitrogen.cfg
 
 touch ~/.config/nitrogen/bg-saved.cfg
 echo "[xin_-1]" >> ~/.config/nitrogen/bg-saved.cfg
@@ -76,7 +76,7 @@ echo "mode=5" >> ~/.config/nitrogen/bg-saved.cfg
 echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 
 #chmod +x files.
@@ -95,7 +95,7 @@ chmod +x ~/.config/rofi/rofi-wifi-menu.sh
 chmod +x ~/.config/rofi/rofi-beats.sh
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 
 #Unzip files to...
@@ -123,7 +123,7 @@ git clone https://github.com/alvatip/Nordzy-cursors ~/bspwm-install-ma-dte/theme
 git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 #Copy Theme files...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
