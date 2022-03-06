@@ -100,6 +100,9 @@ super + ctrl + r
 super + ctrl + alt + s
 	flameshot gui -p ~/Screenshots
 
+@Print
+	flameshot gui -p ~/Screenshots
+
 # Lock computer
 super + alt + l
 	xsecurelock
