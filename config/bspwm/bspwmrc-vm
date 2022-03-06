@@ -5,15 +5,16 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 #bspc monitor (-d or NAME) also the number that should be on that screen.
 #example of reverse order on screens.
 #bspc monitor Screen-1 -s Screen-2
-
-#bspc monitor -d I II III IV V VI VII VIII IX X
+# xrandr --listmonitors or xrandr -q | grep connected
 
 # set the screen resolution and you can find your maximum resolution with this Command.
 # Run xrandr in the terminal.
 xrandr -s 1920x1080 &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 
+
+# BSPwm - Setting.
 bspc config border_width 1
 bspc config normal_border_color 	"#0A1B2A"
 bspc config active_border_color 	"#313745"
@@ -22,7 +23,11 @@ bspc config focused_border_color 	"#FF0A1B2A"
 bspc config window_gap 7
 
 bspc config split_ratio     0.50
+# top_padding so there is room for Polybar.
 bspc config top_padding     28
+bspc config bottom_padding  0
+bspc config left_padding    0
+bspc config right_padding   0
 
 bspc config borderless_monocle  true
 bspc config gapless_monocle     true
@@ -36,7 +41,10 @@ bspc config pointer_follows_monitor true
 bspc config click_to_focus false
 
 bspc config pointer_modifier mod1
-bspc config pointer_action1 resize_side
+bspc config pointer_action1     resize_side
+bspc config pointer_action3     move
+#bspc config pointer_action2     resize_corner
+
 
 # Rule Commands - General Syntax.
 # bspc rule -a, --add (<class_name>|*)[:(<instance_name>|\*)[:(<name>|*)]] 
@@ -51,20 +59,31 @@ bspc config pointer_action1 resize_side
 
 bspc rule -a Nitrogen state=floating follow=on center=true rectangle=1050x700+0+0
 bspc rule -a Screenkey manage=off
+bspc rule -a xfreerdp state=floating center=true
+bspc rule -a Gvncviewer state=floating center=true
 
-bspc rule -a Google-chrome desktop='^2' follow=on border=off
-bspc rule -a Firefox desktop='^2' follow=on border=off
-bspc rule -a Gimp desktop='^7' follow=on layer=above border=off
-bspc rule -a Inkscape desktop='^8' follow=on border=off
-bspc rule -a LibreCAD desktop='^9' follow=on border=off
-bspc rule -a mpv desktop='^10' state=floating
+bspc rule -a Google-chrome desktop=1 follow=on border=off
+bspc rule -a Mozilla Firefox desktop=1 follow=on border=off
+bspc rule -a Code desktop=3 follow=on  border=off
+bspc rule -a TeamViewer desktop=5 state=floating center=true follow=on border=off
+bspc rule -a Steam desktop=6 follow=on border=off
+bspc rule -a Gimp desktop=7 follow=on layer=above border=off
+bspc rule -a Inkscape desktop=7 follow=on border=off
+bspc rule -a LibreCAD desktop=7 follow=on border=off
+bspc rule -a mpv desktop=7 state=fullscreen follow=on border=off
+
 
 # Automatically start up programs.
-picom &
+xsetroot -cursor_name left_ptr &
 nitrogen --restore &
+
+pkill picom
+sleep 1
+picom -b --experimental-backends &
 
 $HOME/.config/polybar/run-polybar.sh &
 
+xfce4-power-manager &
+
 # lock computer automatically after X time of minutes.
-xautolock -time 15 -locker "xsecurelock" -detectsleep -secure &
-#xscreensaver -nosplash &
+xautolock -time 120 -locker "xsecurelock" -detectsleep -secure &

@@ -1,13 +1,14 @@
 #
-#        Hotkey - Config
+# SXHKD Hotkey's config.
 #
-###################################
-# Reload sxhkd config file.
-alt + shift + ctrl + Escape
+# Reload SXHKD Config.
+
+shift + ctrl + alt + Escape
 	pkill -USR1 -x sxhkd
+
 ###################################
 
-# TerminalĀ“s primary and secondary.
+# Terminal´s primary and secondary.
 alt + Return
 	kitty
 
@@ -15,20 +16,20 @@ alt + shift + Return
 	alacritty
 
 
-# Rofi launcher # # # # # # # # # # # # #
+# Rofi launcher - Start # # # # # # # # # # # # # # # # # #
 alt + r
-	rofi -show run
+	rofi -modi "run,window,filebrowser,ssh" -show run
 
-alt + shift + r
-	rofi -modi "run,window,file-browser,ssh" -show run
+alt + space
+	rofi -modi "run,window,filebrowser,ssh" -show run
 
 alt + ctrl + m
 	. ~/.config/rofi/rofi-beats.sh
 
-alt + ctrl + alt + w
+shift + ctrl + alt + w
 	. ~/.config/rofi/rofi-wifi-menu.sh
 
-# Rofi launcher # # # # # # # # # # # # #
+# Rofi launcher - End # # # # # # # # # # # # # # # # # # #
 
 alt + b
 	google-chrome
@@ -36,17 +37,71 @@ alt + b
 alt + shift + b
 	firefox
 
+
+# File Manager
 alt + e
 	pcmanfm
 
-alt + shift + ctrl + a
-	kitty -e pulsemixer
+alt + shift + e
+	thunar
+
+# Steam (flatpak run)
+alt + ctrl + s
+	steam
+
+#	flatpak run com.valvesoftware.Steam
+
+# Audio / Music
+
+shift + alt + a
+        kitty -e pulsemixer
+
+shift + alt + m
+        pulsemixer --toggle-mute
+
+shift + alt + Up
+    pulsemixer --change-volume +1
+
+shift + alt + Down
+    pulsemixer --change-volume -1
+
+XF86AudioRaiseVolume
+    pulsemixer --change-volume +1
+
+XF86AudioLowerVolume
+    pulsemixer --change-volume -1
+
+XF86AudioMute
+    pulsemixer --toggle-mute
+
+shift + ctrl + alt + m
+    kitty -e mocpsteam
 
 
-#######   lock computer  #######
-alt + l
+shift + ctrl + alt + c
+	code -r ~/.config
+
+# GVNCviewer
+alt + ctrl + g
+    gvncviewer 192.168.1.10:77
+
+# NXw
+alt + ctrl + o
+    /opt/networkoptix/client/4.2.0.32840/bin/client-bin
+
+
+# Remote Desktop Protocol (RDP)
+alt + ctrl + r
+    bash -ic 'rdp'
+
+# Flameshot (Screenshot Software)
+shift + ctrl + alt + s
+	flameshot gui -p ~/Screenshots
+
+# lock computer
+shift + alt + l
 	xsecurelock
-#######   lock computer  #######
+
 
 #
 #
@@ -65,7 +120,7 @@ alt + l
 
 
 # quit/restart bspwm
-alt + shift + ctrl + {q,r}
+ctrl + alt + shift + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
@@ -127,8 +182,14 @@ alt + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-alt + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+#super + {_,shift + }{1-9,0}
+#	bspc {desktop -f,node -d} '^{1-9,10}'
+
+alt + {1-9,0}
+        bspc desktop -f {1-9,10}
+
+alt + shift + {1-9,0}
+        bspc node -d {1-9,10} -f
 
 #
 # Preselect
@@ -155,37 +216,13 @@ alt + ctrl + shift + space
 #
 
 # expand a window by moving one of its side outward
-alt + ctrl + {h,j,k,l}
-	bspc node -z {left -50 0,bottom 0 50,top 0 -50,right 50 0}
+shift + alt + {h,j,k,l}
+	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
 
 # contract a window by moving one of its side inward
-alt + ctrl + shift + {h,j,k,l}
-	bspc node -z {right -50 0,top 0 50,bottom 0 -50,left 50 0}
+ctrl + alt + shift + {h,j,k,l}
+	bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
 
 # move a floating window
 alt + {Left,Down,Up,Right}
-	bspc node -v {-50 0,0 50,0 -50,50 0}
-
-
-
-#                                                                                                                      
-#  88b           d88                       88  88                        88                                            
-#  888b         d888                       88  ""                        88                                            
-#  88`8b       d8'88                       88                            88                                            
-#  88 `8b     d8' 88   ,adPPYba,   ,adPPYb,88  88  ,adPPYYba,            88   ,d8   ,adPPYba,  8b       d8  ,adPPYba,  
-#  88  `8b   d8'  88  a8P_____88  a8"    `Y88  88  ""     `Y8  aaaaaaaa  88 ,a8"   a8P_____88  `8b     d8'  I8[    ""  
-#  88   `8b d8'   88  8PP"""""""  8b       88  88  ,adPPPPP88  """"""""  8888[     8PP"""""""   `8b   d8'    `"Y8ba,   
-#  88    `888'    88  "8b,   ,aa  "8a,   ,d88  88  88,    ,88            88`"Yba,  "8b,   ,aa    `8b,d8'    aa    ]8I  
-#  88     `8'     88   `"Ybbd8"'   `"8bbdP"Y8  88  `"8bbdP"Y8            88   `Y8a  `"Ybbd8"'      Y88'     `"YbbdP"'  
-#                                                                                                  d8'                 
-#                                                                                                 d8'                  
-#
-
-alt + ctrl + Up
-	amixer -D pulse sset Master 5%+
-
-alt + ctrl + Down
-	amixer -D pulse sset Master 5%-
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
+	bspc node -v {-10 0,0 10,0 -10,10 0}

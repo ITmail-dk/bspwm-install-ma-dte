@@ -8,7 +8,7 @@ super + shift + ctrl + alt + Escape
 
 ###################################
 
-# TerminalĀ“s primary and secondary.
+# Terminal´s primary and secondary.
 super + Return
 	kitty
 
@@ -46,8 +46,10 @@ super + shift + e
 	thunar
 
 # Steam (flatpak run)
-super + alt + s
-	flatpak run com.valvesoftware.Steam
+super + ctrl + s
+	steam
+
+#	flatpak run com.valvesoftware.Steam
 
 # Audio / Music
 
@@ -58,30 +60,46 @@ super + alt + m
         pulsemixer --toggle-mute
 
 super + alt + Up
-        pulsemixer --change-volume +5
+    pulsemixer --change-volume +1
 
 super + alt + Down
-        pulsemixer --change-volume -5
+    pulsemixer --change-volume -1
 
 XF86AudioRaiseVolume
-    pulsemixer --change-volume +5
+    pulsemixer --change-volume +1
 
 XF86AudioLowerVolume
-    pulsemixer --change-volume -5
+    pulsemixer --change-volume -1
 
 XF86AudioMute
     pulsemixer --toggle-mute
 
 super + ctrl + alt + m
-    kitty -e mocp
+    kitty -e mocpsteam
 
-# Open .config folder in VS Code
+
 super + ctrl + alt + c
-    kitty -e code ~/.config/
+	code -r ~/.config
 
+# GVNCviewer
+super + ctrl + g
+    gvncviewer 192.168.1.10:77
+
+# NXw
+super + ctrl + o
+    /opt/networkoptix/client/4.2.0.32840/bin/client-bin
+
+
+# Remote Desktop Protocol (RDP)
+super + ctrl + r
+    bash -ic 'rdp'
+
+# Flameshot (Screenshot Software)
+super + ctrl + alt + s
+	flameshot gui -p ~/Screenshots
 
 # lock computer
-super + l
+super + alt + l
 	xsecurelock
 
 

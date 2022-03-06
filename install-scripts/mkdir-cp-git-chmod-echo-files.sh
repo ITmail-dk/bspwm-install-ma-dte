@@ -59,12 +59,14 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sudo sh -c "echo 'deb http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 
+sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
+sudo sh -c "echo 'Xcursor.size: 18' >> /etc/X11/Xresources/x11-common"
 
 echo "     Add UPUP alias to bash under bash_aliases config."
-touch ~/.bash_aliases
-echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bash_aliases
-echo 'alias vi="nvim"' >> ~/.bash_aliases
-echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> ~/.bash_aliases
+touch ~/.bashrc
+echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bashrc
+echo 'alias vi="nvim"' >> ~/.bashrc
+echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> ~/.bashrc
 
 # Echo Nitrogen config to files.
 #echo "dirs=$HOME/wallpapers/1080p;" >> ~/.config/nitrogen/nitrogen.cfg
