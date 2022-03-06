@@ -45,19 +45,21 @@ super + e
 super + shift + e
 	thunar
 
-# Steam (flatpak run)
+# Steam
 super + ctrl + s
 	steam
 
-#	flatpak run com.valvesoftware.Steam
+# Network Manager
+super + alt + n
+	kitty -e nmtui
 
 # Audio / Music
 
 super + alt + a
-        kitty -e pulsemixer
+	kitty -e pulsemixer
 
 super + alt + m
-        pulsemixer --toggle-mute
+	pulsemixer --toggle-mute
 
 super + alt + Up
     pulsemixer --change-volume +1
@@ -98,10 +100,13 @@ super + ctrl + r
 super + ctrl + alt + s
 	flameshot gui -p ~/Screenshots
 
-# lock computer
+# Lock computer
 super + alt + l
 	xsecurelock
 
+# Settings-manager
+super + i
+	xfce4-settings-manager
 
 #
 #
@@ -186,10 +191,10 @@ super + {o,i}
 #	bspc {desktop -f,node -d} '^{1-9,10}'
 
 super + {1-9,0}
-        bspc desktop -f {1-9,10}
+	bspc desktop -f {1-9,10}
 
 super + shift + {1-9,0}
-        bspc node -d {1-9,10} -f
+	bspc node -d {1-9,10} -f
 
 #
 # Preselect
