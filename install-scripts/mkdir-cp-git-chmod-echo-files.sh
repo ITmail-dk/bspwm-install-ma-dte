@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
@@ -29,7 +29,7 @@ mkdir ~/Music
 
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 #Copy files to...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -47,7 +47,7 @@ cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 cp ~/bspwm-install-ma-dte/local-files/.Xresources ~/
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 # Echo config to files. YES / NO
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -58,9 +58,6 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 sudo sh -c "echo 'deb http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
-
-sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
-sudo sh -c "echo 'Xcursor.size: 18' >> /etc/X11/Xresources/x11-common"
 
 echo "     Add UPUP alias to bash under bash_aliases config."
 touch ~/.bashrc
@@ -78,7 +75,7 @@ echo "mode=5" >> ~/.config/nitrogen/bg-saved.cfg
 echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 
 #chmod +x files.
@@ -97,7 +94,7 @@ chmod +x ~/.config/rofi/rofi-wifi-menu.sh
 chmod +x ~/.config/rofi/rofi-beats.sh
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 
 #Unzip files to...
@@ -125,7 +122,7 @@ git clone https://github.com/alvatip/Nordzy-cursors ~/bspwm-install-ma-dte/theme
 git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme ~/bspwm-install-ma-dte/themes/icons/Papirus-icon-theme
 
 # Not for production version
-read -p "Troubleshooting - Press a key to continue the installation."
+#read -p "Troubleshooting - Press a key to continue the installation."
 
 #Copy Theme files...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
