@@ -10,19 +10,19 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 sudo apt update && sudo apt upgrade -y
 
-# Install Hugo Extended v0.91.2
+# Install Hugo Extended v0.94.1
 
 cd  /tmp/
-wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_extended_0.91.2_Linux-64bit.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.94.1/hugo_extended_0.94.1_Linux-64bit.deb
 
 echo "Enter your user password, to continue install."
-sudo apt install -y /tmp/hugo_extended_0.91.2_Linux-64bit.deb
+sudo apt install -y /tmp/hugo_extended_0.94.1_Linux-64bit.deb
 
 clear
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
-echo "    Hugo Extended v0.91.2 Install - ALL DONE"
+echo "    Hugo Extended Install - ALL DONE"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
