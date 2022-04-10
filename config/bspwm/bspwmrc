@@ -11,10 +11,10 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Run xrandr in the terminal.
 #xrandr -s 1920x1080 &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 # Monitor Setup / Multi monitor and desktops 
-#bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+#bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 # Desktops / Workspaces 1-9 + 0 = Desktop 10
 
 #bspc monitor DP-2 -d 1 2 3 4 5 6 7
@@ -75,15 +75,15 @@ bspc rule -a Screenkey manage=off
 bspc rule -a xfreerdp state=floating center=true
 bspc rule -a Gvncviewer state=floating center=true
 
-bspc rule -a Google-chrome desktop=1 follow=on border=off
-bspc rule -a Mozilla Firefox desktop=1 follow=on border=off
+bspc rule -a Google-chrome border=off
+bspc rule -a Mozilla Firefox border=off
 bspc rule -a Code desktop=3 follow=on  border=off
 bspc rule -a TeamViewer desktop=5 state=floating center=true follow=on border=off
 bspc rule -a Steam desktop=6 follow=on border=off
 bspc rule -a Gimp desktop=7 follow=on layer=above border=off
 bspc rule -a Inkscape desktop=7 follow=on border=off
 bspc rule -a LibreCAD desktop=7 follow=on border=off
-bspc rule -a mpv desktop=7 state=fullscreen follow=on border=off
+bspc rule -a mpv state=fullscreen border=off
 
 
 # Automatically start up programs.
@@ -97,6 +97,9 @@ picom -b --experimental-backends &
 $HOME/.config/polybar/run-polybar.sh &
 
 xfce4-power-manager &
+
+sleep 2
+$HOME/.config/polybar/run-polybar.sh &
 
 # lock computer automatically after X time of minutes.
 xautolock -time 120 -locker "xsecurelock" -detectsleep -secure &

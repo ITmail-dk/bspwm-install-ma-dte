@@ -62,15 +62,15 @@ bspc rule -a Screenkey manage=off
 bspc rule -a xfreerdp state=floating center=true
 bspc rule -a Gvncviewer state=floating center=true
 
-bspc rule -a Google-chrome desktop=1 follow=on border=off
-bspc rule -a Mozilla Firefox desktop=1 follow=on border=off
+bspc rule -a Google-chrome border=off
+bspc rule -a Mozilla Firefox border=off
 bspc rule -a Code desktop=3 follow=on  border=off
 bspc rule -a TeamViewer desktop=5 state=floating center=true follow=on border=off
 bspc rule -a Steam desktop=6 follow=on border=off
 bspc rule -a Gimp desktop=7 follow=on layer=above border=off
 bspc rule -a Inkscape desktop=7 follow=on border=off
 bspc rule -a LibreCAD desktop=7 follow=on border=off
-bspc rule -a mpv desktop=7 state=fullscreen follow=on border=off
+bspc rule -a mpv state=fullscreen border=off
 
 
 # Automatically start up programs.
