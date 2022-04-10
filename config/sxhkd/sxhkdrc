@@ -26,7 +26,7 @@ super + space
 super + ctrl + m
 	. ~/.config/rofi/rofi-beats.sh
 
-super + ctrl + alt + w
+super + alt + w
 	. ~/.config/rofi/rofi-wifi-menu.sh
 
 # Rofi launcher - End # # # # # # # # # # # # # # # # # # #
@@ -40,26 +40,26 @@ super + shift + b
 
 # File Manager
 super + e
-	pcmanfm
-
-super + shift + e
 	thunar
 
-# Steam
+super + shift + e
+	pcmanfm
+
+# Steam (flatpak run)
 super + ctrl + s
 	steam
 
-# Network Manager
+# Network
 super + alt + n
 	kitty -e nmtui
 
 # Audio / Music
 
 super + alt + a
-	kitty -e pulsemixer
+    kitty -e pulsemixer
 
 super + alt + m
-	pulsemixer --toggle-mute
+    pulsemixer --toggle-mute
 
 super + alt + Up
     pulsemixer --change-volume +1
@@ -80,14 +80,28 @@ super + ctrl + alt + m
     kitty -e mocpsteam
 
 
+# Edit Config files in Code
 super + ctrl + alt + c
 	code -r ~/.config
 
+# Edit WebWork files in Code
+super + ctrl + alt + w
+	code -r ~/nas/WebWork
+
+
+# GVNCviewer TEST
+super + ctrl + alt + shift + g
+    gvncviewer IP:PORT
+
 # GVNCviewer
 super + ctrl + g
-    gvncviewer 192.168.1.10:77
+    gvncviewer IP:PORT
 
-# NXw
+# GVNCviewer Remote Desktop Work
+super + ctrl + w
+	gvncviewer IP:PORT
+
+# NX Witness client
 super + ctrl + o
     /opt/networkoptix/client/4.2.0.32840/bin/client-bin
 
@@ -95,6 +109,10 @@ super + ctrl + o
 # Remote Desktop Protocol (RDP)
 super + ctrl + r
     bash -ic 'rdp'
+
+# Remote Desktop Protocol (RDP)
+
+    bash -ic 'rdpwork'
 
 # Flameshot (Screenshot Software)
 super + ctrl + alt + s
@@ -104,13 +122,12 @@ super + ctrl + alt + s
 	flameshot gui -p ~/Screenshots
 
 # Lock computer
-super + alt + l
+super + l
 	xsecurelock
 
 # Settings-manager
 super + i
 	xfce4-settings-manager
-
 #
 #
 #
@@ -194,10 +211,10 @@ super + {o,i}
 #	bspc {desktop -f,node -d} '^{1-9,10}'
 
 super + {1-9,0}
-	bspc desktop -f {1-9,10}
+        bspc desktop -f {1-9,10}
 
 super + shift + {1-9,0}
-	bspc node -d {1-9,10} -f
+        bspc node -d {1-9,10} -f
 
 #
 # Preselect
