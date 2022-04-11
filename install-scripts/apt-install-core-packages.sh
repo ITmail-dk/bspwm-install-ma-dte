@@ -17,7 +17,7 @@ sudo apt update && sudo apt upgrade -y
 echo "Enter your user password, to continue if necessary"
 
 # Core packages to be installed
-sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi pcmanfm font-manager gvfs-backends nitrogen dunst cups smbclient cifs-utils lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer pulseaudio-utils bluez bluez-firmware bluez-tools bluez-alsa-utils xfce4-pulseaudio-plugin moc mpv npm cava curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted xfce4-power-manager xfce4-settings
+sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi pcmanfm font-manager gvfs-backends nitrogen dunst cups xsensors smbclient cifs-utils lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer pulseaudio-utils bluez bluez-firmware bluez-tools bluez-alsa-utils xfce4-pulseaudio-plugin moc mpv npm cava curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted xfce4-power-manager xfce4-settings
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
