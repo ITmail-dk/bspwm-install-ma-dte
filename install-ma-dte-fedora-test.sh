@@ -15,6 +15,8 @@ cd ~/bspwm-install-ma-dte
 
 # Add Pulseaudio to system startup as user.
 systemctl --user enable pulseaudio
+sudo systemctl enable sddm
+sudo systemctl set-default graphical.target
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
@@ -25,8 +27,8 @@ systemctl --user enable pulseaudio
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
-sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
-sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
+#sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
+#sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."

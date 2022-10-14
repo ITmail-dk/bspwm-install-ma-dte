@@ -56,9 +56,6 @@ echo "     Echo config to files..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-sudo sh -c "echo 'deb http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
-sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
-
 echo "     Add UPUP alias to bash under bash_aliases config."
 touch ~/.bashrc
 echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bashrc

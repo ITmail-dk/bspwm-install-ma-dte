@@ -28,6 +28,10 @@ systemctl --user enable pulseaudio
 sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
 sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
 
+sudo sh -c "echo 'deb http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
+sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
+
+
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
