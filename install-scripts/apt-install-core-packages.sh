@@ -23,6 +23,6 @@ sudo apt install -y xorg x11-xserver-utils arandr autorandr dialog bspwm sxhkd s
 #read -p "Troubleshooting - Press a key to continue the installation."
 
 # Google Chrome - Download + Install  ON / OFF
-rm google-chrome-stable_current_amd64.deb
+#rm google-chrome-stable_current_amd64.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb

@@ -11,7 +11,7 @@ echo "     continues the software installation in 3 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 3
-# APT Update & apt upgrade
+# DNF Update & apt upgrade
 sudo dnf update && sudo dnf upgrade -y
 
 echo "Enter your user password, to continue if necessary"
