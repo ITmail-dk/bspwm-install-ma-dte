@@ -1,6 +1,21 @@
 #!/bin/bash
 #cd ~/bspwm-install-ma-dte
 
+sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
+sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
+
+sudo sh -c "echo 'deb http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
+sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+
+# APT Update & apt upgrade
+sudo apt update && sudo apt upgrade -y
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+
 # Do, mkdir, copy, copy, echo files.
 . ~/bspwm-install-ma-dte/install-scripts/mkdir-cp-git-chmod-echo-files.sh
 
@@ -25,15 +40,6 @@ systemctl --user enable pulseaudio
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
-sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
-sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
-
-sudo sh -c "echo 'deb http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
-sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
-
-
-# Not for production version
-#read -p "Troubleshooting - Press a key to continue the installation."
 
 # Last step setup menu installing.
 #. ~/bspwm-install-ma-dte/last-step-setup-menu.sh
