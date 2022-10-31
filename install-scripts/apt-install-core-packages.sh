@@ -27,5 +27,13 @@ sudo apt install -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar 
 
 # Google Chrome - Download + Install  ON / OFF
 #rm google-chrome-stable_current_amd64.deb
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install -y ~/bspwm-install-ma-dte/google-chrome-stable_current_amd64.deb
+cd /tmp/ && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install -y /tmp/google-chrome-stable_current_amd64.deb
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+
+cd ~/bspwm-install-ma-dte
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
