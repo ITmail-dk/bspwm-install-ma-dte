@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/bspwm-install-ma-dte
+#cd ~/bspwm-install-ma-dte
 
 # Do, mkdir, copy, copy, echo files.
 . ~/bspwm-install-ma-dte/install-scripts/mkdir-cp-git-chmod-echo-files.sh
