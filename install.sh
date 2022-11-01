@@ -1,5 +1,5 @@
 #!/bin/bash
-# APT Update & apt upgrade
+# APT Update + install
 sudo apt update && sudo apt install -y dialog git
 # Remember that this menu uses this apt package "dialog"
 

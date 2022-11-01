@@ -10,11 +10,12 @@ echo " "
 echo "     continues the software installation in 3 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-sleep 3
-# APT Update & apt upgrade
-sudo apt update && sudo apt upgrade -y
+sleep 2
 
 echo "Enter your user password, to continue if necessary"
+
+# APT Update Start RUN
+sudo apt update
 
 # Core packages to be installed
 sudo apt install -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer bluez bluez-firmware bluez-tools xfce4-pulseaudio-plugin moc mpv curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop

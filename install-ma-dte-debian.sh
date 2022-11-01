@@ -10,8 +10,8 @@ sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
-# APT Update & apt upgrade
-sudo apt update && sudo apt upgrade -y
+# Run APT Update
+sudo apt update
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
