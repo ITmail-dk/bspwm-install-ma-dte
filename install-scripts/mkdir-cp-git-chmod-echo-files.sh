@@ -56,14 +56,14 @@ echo "     Echo config to files..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-echo "     Add UPUP alias to bash under bash_aliases config."
+echo "     Add Alias to bashrc under bash_aliases config."
 touch ~/.bashrc
 echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bashrc
 echo 'alias vi="nvim"' >> ~/.bashrc
 echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> ~/.bashrc
 
 # Echo Nitrogen config to files.
-#echo "dirs=$HOME/wallpapers/1080p;" >> ~/.config/nitrogen/nitrogen.cfg
+echo "dirs=$HOME/wallpapers/;" >> ~/.config/nitrogen/nitrogen.cfg
 
 touch ~/.config/nitrogen/bg-saved.cfg
 echo "[xin_-1]" >> ~/.config/nitrogen/bg-saved.cfg
