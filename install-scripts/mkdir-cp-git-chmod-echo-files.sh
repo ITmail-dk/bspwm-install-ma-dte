@@ -26,10 +26,9 @@ mkdir ~/Public
 mkdir ~/Videos
 mkdir ~/Music
 
-
-
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 #Copy files to...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -48,6 +47,7 @@ cp ~/bspwm-install-ma-dte/local-files/.Xresources ~/
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 # Echo config to files. YES / NO
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -73,7 +73,7 @@ echo "bgcolor=#191a1b" >> ~/.config/nitrogen/bg-saved.cfg
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
-
+clear
 
 #chmod +x files.
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -92,7 +92,7 @@ chmod +x ~/.config/rofi/rofi-beats.sh
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
-
+clear
 
 #Unzip files to...
 #echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -120,6 +120,7 @@ git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme ~/bspwm-i
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 #Copy Theme files...
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
@@ -148,6 +149,9 @@ mkdir ~/.config/gtk-3.0
 cp ~/bspwm-install-ma-dte/themes/gtk-3.0/settings.ini ~/.config/gtk-3.0
 cp ~/bspwm-install-ma-dte/themes/.gtkrc-2.0 ~/
 
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
