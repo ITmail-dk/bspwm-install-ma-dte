@@ -158,3 +158,7 @@ echo " "
 echo "          All DONE - User + .config files..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+clear
