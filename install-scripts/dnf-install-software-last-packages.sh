@@ -10,7 +10,7 @@ echo " "
 echo "     continues the installation in 3 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-sleep 3
+sleep 1
 
 # Software & Packages
 sudo dnf install -y wireguard-tools librecad freerdp thunar thunar-archive-plugin filezilla gigolo
