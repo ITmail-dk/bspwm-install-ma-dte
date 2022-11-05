@@ -31,7 +31,7 @@ Here is what the command line does, it installs the GIT package an goes to your 
 `sudo apt install -y git && cd ~ && git clone https://github.com/ITmail-dk/bspwm-install-ma-dte && . ~/bspwm-install-ma-dte/install.sh`
 
 
-*Or you can do it line by line here, it's entirely up to you... And what you think is easiest.*
+*Or you can do it line by line here, it's entirely up to you...*
 
 `sudo apt install -y git`
 
@@ -42,7 +42,16 @@ Here is what the command line does, it installs the GIT package an goes to your 
 `. ~/bspwm-install-ma-dte/install.sh`
 
 
-#### Here is a list of software that will be installed from the start
-so you should be up and running when the installation is complete.
+#### Here are some shortcuts to get you started.
 
-kitty, alacritty, pcmanfm, rofi, nitrogen, lxappearance, neovim, google chrome, firefox, ranger, font-manager, libreoffice, inkscape, gimp, rawtherapee, darktable, okular, scribus, obs-studio, timeshift, freerdp, wireguard, etc...
+SUPER + ENTER = Kitty (Terminal)
+
+SUPER + B = Google Chrome (Webbrowser)
+
+SUPER + SHIFT + B = Firefox (Webbrowser)
+
+SUPER + E = Thunar (File Browser)
+
+SUPER + R = Rofi (Run launcher)
+
+And the rest you can see under .config/sxhkd/sxhkdrc
