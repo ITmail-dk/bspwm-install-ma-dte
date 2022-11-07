@@ -23,6 +23,9 @@ super + r
 super + space
 	rofi -modi "run,window,filebrowser,ssh" -show run
 
+alt + Tab
+	rofi -modi "window,run" -show window
+
 super + ctrl + m
 	. ~/.config/rofi/rofi-beats.sh
 
