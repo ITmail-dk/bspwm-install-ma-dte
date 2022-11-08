@@ -52,6 +52,10 @@ super + shift + e
 super + ctrl + s
 	steam
 
+# SteamLink  (flatpak run)
+super + ctrl + s + l
+    steamlinkrun
+
 # Network
 super + alt + n
 	kitty -e nmtui
