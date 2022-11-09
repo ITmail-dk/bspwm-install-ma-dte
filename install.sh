@@ -15,7 +15,7 @@ acttextbox=gray,white
 entry=lightgray,gray
 disentry=gray,lightgray
 checkbox=black,lightgray
-actcheckbox=black,blue
+actcheckbox=white,blue
 emptyscale=,black
 fullscale=,red
 listbox=black,lightgray
@@ -35,8 +35,7 @@ whiptail --title "The installation of Martin BSPwm DTE on Debian" --menu "Choose
 	"3)" "Intel System" \
 	"4)" "Intel System + NVIDIA GPU" \
 	"5)" "Virtual Machine System - NO microcode or GPU Drivers" \
-	"6)" "Exit, Do nothing" 3>&2 2>&1 1>&3
-)
+	"6)" "Exit, Do nothing" 3>&2 2>&1 1>&3)
 
 # APTSELECTED MENU ############################################################################################################################################
 
@@ -304,7 +303,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 1
 
 # Software & Packages
-sudo dnf install -y wireguard-tools librecad freerdp thunar thunar-archive-plugin filezilla gigolo $APTSELECTED
+sudo apt install -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 $APTSELECTED
 
 # Maybe maybe Software & Packages ON / OFF
 #sudo apt install -y 
