@@ -39,18 +39,17 @@ whiptail --title "The installation of Martin BSPwm DTE on Debian" --menu "Choose
 
 # APTSELECTED MENU ############################################################################################################################################
 
-APTSELECTED=$(whiptail --title "Software Packages" --checklist --separate-output \
-"List of packages" 0 80 0 \
-"filezilla" "Free FTP solution" OFF \
-"notepadqq" "A text editor for developers" OFF \
-"librecad" "Open Source CAD application" OFF \
-"inkscape" "vector graphics software" OFF \
-"gimp" "Image Manipulation Program" OFF \
-"rawtherapee" "Raw image processing program" OFF \
-"darktable" "Lighttable & Darkroom for photographers" OFF \
-"okular" "The Universal Document Viewer" OFF \
-"scribus" "Open Source Desktop Publishing" OFF \
-"obs-studio" "OBS (Open Broadcaster Software)" OFF 3>&1 1>&2 2>&3)
+APTSELECTED=$(whiptail --separate-output --checklist "Software Packages" 20 80 10 \
+  "filezilla" "Free FTP solution" OFF \
+  "notepadqq" "A text editor for developers" OFF \
+  "librecad" "Open Source CAD application" OFF \
+  "inkscape" "vector graphics software" OFF \
+  "gimp" "Image Manipulation Program" OFF \
+  "rawtherapee" "Raw image processing program" OFF \
+  "darktable" "Lighttable & Darkroom for photographers" OFF \
+  "okular" "The Universal Document Viewer" OFF \
+  "scribus" "Open Source Desktop Publishing" OFF \
+  "obs-studio" "Open Broadcaster Software" OFF 3>&1 1>&2 2>&3)
 
 # LIST filezilla notepadqq gigolo netdiscover librecad inkscape gimp rawtherapee darktable okular scribus obs-studio
 
