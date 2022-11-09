@@ -1,5 +1,6 @@
 #!/bin/bash
-# NEW Install
+
+# START MENU ############################################################################################################################################
 
 CHOICESTART=$(
 whiptail --title "The installation of Martin BSPwm DTE on Debian" --menu "Choose you system from the following" 16 100 9 \
@@ -11,7 +12,24 @@ whiptail --title "The installation of Martin BSPwm DTE on Debian" --menu "Choose
 	"6)" "Exit, Do nothing" 3>&2 2>&1 1>&3
 )
 
-# RUN 1
+# APTSELECTED MENU ############################################################################################################################################
+
+APTSELECTED=$(whiptail --title "Software Packages" --checklist --separate-output \
+"List of packages" 0 80 0 \
+"filezilla" "Free FTP solution" OFF \
+"notepadqq" "A text editor for developers" OFF \
+"librecad" "Open Source CAD application" OFF \
+"inkscape" "vector graphics software" OFF \
+"gimp" "Image Manipulation Program" OFF \
+"rawtherapee" "Raw image processing program" OFF \
+"darktable" "Lighttable & Darkroom for photographers" OFF \
+"okular" "The Universal Document Viewer" OFF \
+"scribus" "Open Source Desktop Publishing" OFF \
+"obs-studio" "OBS (Open Broadcaster Software)" OFF 3>&1 1>&2 2>&3)
+
+# LIST filezilla notepadqq gigolo netdiscover librecad inkscape gimp rawtherapee darktable okular scribus obs-studio
+
+# START RUN ############################################################################################################################################
 
 #sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
 #sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
@@ -265,7 +283,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 1
 
 # Software & Packages
-sudo dnf install -y wireguard-tools librecad freerdp thunar thunar-archive-plugin filezilla gigolo
+sudo dnf install -y wireguard-tools librecad freerdp thunar thunar-archive-plugin filezilla gigolo $APTSELECTED
 
 # Maybe maybe Software & Packages ON / OFF
 #sudo apt install -y 
