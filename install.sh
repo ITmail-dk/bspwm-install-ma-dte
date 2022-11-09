@@ -23,7 +23,7 @@ actlistbox=lightgray,gray
 actsellistbox=black,blue
 '
 
-# Colors black red green yellow blue magenta cyan white
+# Colors black red green yellow blue magenta cyan white + lightCOLOR
 
 
 # START MENU ############################################################################################################################################
