@@ -22,6 +22,14 @@ sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
+clear
+
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Enter your user password, to continue if necessary"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+
 # APT Update + install git
 sudo apt update && sudo apt install -y git
 
