@@ -20,7 +20,7 @@ emptyscale=,black
 fullscale=,red
 listbox=black,lightgray
 actlistbox=lightgray,gray
-actsellistbox=black,blue
+actsellistbox=white,blue
 '
 
 # Colors black red green yellow blue magenta cyan white + lightCOLOR
