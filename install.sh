@@ -230,12 +230,7 @@ echo "     APT Install Software & Packages"
 echo " "
 echo "     Enter your user password, to continue if necessary"
 echo " "
-echo "     continues the software installation in 3 seconds"
-echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-sleep 2
-
-echo "Enter your user password, to continue if necessary"
 
 # APT Update Start RUN
 sudo apt update
