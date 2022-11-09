@@ -290,19 +290,16 @@ systemctl --user enable pulseaudio
 #read -p "Troubleshooting - Press a key to continue the installation."
 
 # Last Software & Packages. ############################################################################################################################################
-# Install - Software & Packages.
+clear
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
 echo "     Download, Building & Install Software"
 echo " "
 echo "     Enter your user password, to continue if necessary"
 echo " "
-echo "     continues the installation in 3 seconds"
-echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-sleep 1
 
-# Software & Packages
+# Last Software & Packages
 sudo apt install -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 $APTSELECTED
 
 # Maybe maybe Software & Packages ON / OFF
