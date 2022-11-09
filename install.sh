@@ -1,4 +1,30 @@
 #!/bin/bash
+# MENU COLORS ############################################################################################################################################
+export NEWT_COLORS='
+root=white,gray
+window=white,lightgray
+border=black,lightgray
+shadow=white,black
+button=white,blue
+actbutton=black,red
+compactbutton=black,
+title=black,
+roottext=black,magenta
+textbox=black,lightgray
+acttextbox=gray,white
+entry=lightgray,gray
+disentry=gray,lightgray
+checkbox=black,lightgray
+actcheckbox=black,blue
+emptyscale=,black
+fullscale=,red
+listbox=black,lightgray
+actlistbox=lightgray,gray
+actsellistbox=black,blue
+'
+
+# Colors black red green yellow blue magenta cyan white
+
 
 # START MENU ############################################################################################################################################
 
