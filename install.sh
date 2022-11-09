@@ -66,6 +66,9 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
 #sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
 
+sudo sed -i 's+deb http://deb.debian.org/debian/ testing main contrib non-free+#deb http://deb.debian.org/debian/ testing main contrib non-free+g' /etc/apt/sources.list
+sudo sed -i 's+deb-src http://deb.debian.org/debian/ testing main contrib non-free+#deb-src http://deb.debian.org/debian/ testing main contrib non-free+g' /etc/apt/sources.list
+sleep 1
 sudo sh -c "echo 'deb http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 sudo sh -c "echo 'deb-src http://deb.debian.org/debian/ testing main contrib non-free' >> /etc/apt/sources.list"
 
@@ -325,6 +328,9 @@ clear
 # Last step setup menu installing.
 #. ~/bspwm-install-ma-dte/last-step-setup-menu.sh
 
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 # END RUN ##########################################################################################################################################
 
@@ -352,9 +358,5 @@ case $CHOICESTART in
 		    exit
         ;;
 esac
-
-echo "DONE DOEN"
-
-#done
 
 sudo reboot
