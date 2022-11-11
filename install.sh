@@ -302,7 +302,7 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 # Last Software & Packages
-sudo apt install -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 $APTSELECTED
+sudo apt install -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch $APTSELECTED
 
 # Maybe maybe Software & Packages ON / OFF
 #sudo apt install -y 
