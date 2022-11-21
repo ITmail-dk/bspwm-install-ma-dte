@@ -83,10 +83,6 @@ XF86AudioLowerVolume
 XF86AudioMute
     pulsemixer --toggle-mute
 
-super + ctrl + alt + m
-    kitty -e mocpsteam
-
-
 # Edit Config files in Code
 super + ctrl + alt + c
 	code -r ~/.config
