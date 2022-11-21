@@ -49,16 +49,16 @@ super + shift + e
 	pcmanfm
 
 # Steam (flatpak run)
-super + ctrl + s
-	steam
+#super + ctrl + s
+#	steam
 
 # SteamLink  (flatpak run)
-super + ctrl + s + l
-    steamlinkrun
+super + ctrl + s
+    kitty -e flatpak run com.valvesoftware.SteamLink
 
 # Network
 super + alt + n
-	kitty -e nmtui
+	kitty -e sudo nmtui
 
 # Audio / Music
 
