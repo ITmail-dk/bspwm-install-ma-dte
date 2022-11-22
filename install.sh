@@ -99,15 +99,8 @@ mkdir ~/.local
 mkdir ~/.local/bin
 mkdir ~/wallpapers
 mkdir ~/miscellaneous
-# User folders.
-mkdir ~/Downloads
-mkdir ~/Documents
-mkdir ~/Templates
-mkdir ~/Pictures
-mkdir ~/Desktop
-mkdir ~/Public
-mkdir ~/Videos
-mkdir ~/Music
+# User folders via xdg-user-dirs-update.
+xdg-user-dirs-update
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
