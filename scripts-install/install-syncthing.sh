@@ -20,3 +20,10 @@ echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://
 sleep 1
 
 sudo apt update && sudo apt install -y syncthing
+
+systemctl enable syncthing@$(whoami).service
+systemctl start syncthing@$(whoami).service
+
+clear
+
+systemctl status syncthing@$(whoami).service
