@@ -31,3 +31,5 @@ sudo systemctl start syncthing@$(whoami).service
 clear
 
 sudo systemctl status syncthing@$(whoami).service
+
+echo "WEB GUI AT https://localhost:8384"
