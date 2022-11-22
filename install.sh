@@ -88,7 +88,7 @@ sudo apt update && sudo apt install -y git
 
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 echo " "
-echo "     Creates folders."
+echo "     Creates User folders."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 mkdir ~/.config
@@ -99,7 +99,7 @@ mkdir ~/.local
 mkdir ~/.local/bin
 mkdir ~/wallpapers
 mkdir ~/miscellaneous
-# User folders via xdg-user-dirs-update.
+# Set User folders via xdg-user-dirs-update.
 xdg-user-dirs-update
 
 # Not for production version
@@ -116,7 +116,6 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 #cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
-cp -r ~/bspwm-install-ma-dte/music/* ~/Music/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 
 cp ~/bspwm-install-ma-dte/local-files/.Xresources ~/
