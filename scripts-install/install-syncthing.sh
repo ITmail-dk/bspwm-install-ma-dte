@@ -13,6 +13,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sleep 1
 
 sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+
 sleep 1
 
 echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
@@ -21,9 +22,12 @@ sleep 1
 
 sudo apt update && sudo apt install -y syncthing
 
-systemctl enable syncthing@$(whoami).service
-systemctl start syncthing@$(whoami).service
+sudo systemctl enable syncthing@$(whoami).service
+
+sleep 1
+
+sudo systemctl start syncthing@$(whoami).service
 
 clear
 
-systemctl status syncthing@$(whoami).service
+sudo systemctl status syncthing@$(whoami).service
