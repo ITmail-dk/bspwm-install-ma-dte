@@ -297,8 +297,6 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 # Last Software & Packages
 sudo apt install -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch $APTSELECTED
 
-# Maybe maybe Software & Packages ON / OFF
-#sudo apt install -y 
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
@@ -313,13 +311,6 @@ clear
 
 # Alacritty - Building and installing ON / OFF
 #. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
-
-# Not for production version
-#read -p "Troubleshooting - Press a key to continue the installation."
-
-
-# Last step setup menu installing.
-#. ~/bspwm-install-ma-dte/last-step-setup-menu.sh
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."

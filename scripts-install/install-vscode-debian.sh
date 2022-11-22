@@ -10,7 +10,7 @@ echo " "
 echo "     continues the installation in 3 seconds"
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-sleep 2
+sleep 1
 
 cd /tmp/
 wget -O vscode_amd64.deb 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
