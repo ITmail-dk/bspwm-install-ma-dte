@@ -32,4 +32,12 @@ clear
 
 sudo systemctl status syncthing@$(whoami).service
 
-echo "WEB GUI AT https://localhost:8384"
+clear
+
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo " "
+echo "                WEB GUI AT https://localhost:8384"
+echo " "
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
