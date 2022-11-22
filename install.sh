@@ -328,6 +328,10 @@ clear
 # Make Xorg config file
 sudo Xorg -configure
 
+sudo sed -i 's+GRUB_TIMEOUT=5+GRUB_TIMEOUT=1+g' /etc/default/grub
+
+sudo update-grub
+
 # END RUN ##########################################################################################################################################
 
 case $CHOICESTART in
