@@ -325,6 +325,9 @@ clear
 #read -p "Troubleshooting - Press a key to continue the installation."
 clear
 
+# Make Xorg config file
+sudo Xorg -configure
+
 # END RUN ##########################################################################################################################################
 
 case $CHOICESTART in
