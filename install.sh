@@ -39,7 +39,7 @@ whiptail --title "The installation of Martin BSPwm DTE on Debian" --menu "Choose
 
 # APTSELECTED MENU ############################################################################################################################################
 
-APTSELECTED=$(whiptail --separate-output --checklist "Software Packages" 20 80 10 \
+APTSELECTED=$(whiptail --separate-output --checklist "APT Software Packages" 20 80 10 \
   "filezilla" "Free FTP solution" OFF \
   "notepadqq" "A text editor for developers" OFF \
   "librecad" "Open Source CAD application" OFF \
