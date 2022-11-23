@@ -135,7 +135,7 @@ echo "     Add Alias to bashrc under bash_aliases config."
 touch ~/.bashrc
 echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bashrc
 echo 'alias vi="nvim"' >> ~/.bashrc
-echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"' >> ~/.bashrc
+echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt clean && sudo apt autoremove -y"' >> ~/.bashrc
 
 # Echo Nitrogen config to files.
 echo "dirs=$HOME/wallpapers/;" >> ~/.config/nitrogen/nitrogen.cfg
