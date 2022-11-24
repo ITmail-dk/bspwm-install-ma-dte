@@ -81,6 +81,34 @@ sudo apt update && sudo apt install -y git
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
+case $CHOICESTART in
+	"1)")   
+	        sudo apt install -y amd64-microcode
+	;;
+	"2)")   
+            sudo apt install -y amd64-microcode nvidia-detect nvidia-driver
+	;;
+
+	"3)")   
+	        sudo apt install -y intel-microcode
+        ;;
+
+	"4)")   
+	        sudo apt install -y intel-microcode nvidia-detect nvidia-driver
+        ;;
+
+	"5)")   
+            sudo reboot
+        ;;
+
+	"6)")   
+		    exit
+        ;;
+esac
+
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
+
 # Do, mkdir, copy, copy, echo files. ############################################################################################################################################
 
 # Not for production version
@@ -255,7 +283,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sudo apt update
 
 # Core packages to be installed ############################################################################################################################################
-sudo apt install -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer bluez bluez-firmware bluez-tools bluez-alsa-utils blueman xfce4-pulseaudio-plugin moc mpv curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput jgmenu
+sudo apt install -m -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer bluez bluez-firmware bluez-tools bluez-alsa-utils blueman xfce4-pulseaudio-plugin moc mpv curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput jgmenu
 
 # APT OFF
 # system-config-printer cifs-utils 
@@ -294,7 +322,7 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 # Last Software & Packages
-sudo apt install -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch $APTSELECTED
+sudo apt install -m -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch $APTSELECTED
 
 
 # Not for production version
@@ -323,30 +351,5 @@ sudo sed -i 's+GRUB_TIMEOUT=5+GRUB_TIMEOUT=1+g' /etc/default/grub
 sudo update-grub
 
 # END RUN ##########################################################################################################################################
-
-case $CHOICESTART in
-	"1)")   
-	        sudo apt install -y amd64-microcode
-	;;
-	"2)")   
-            sudo apt install -y amd64-microcode nvidia-detect nvidia-driver
-	;;
-
-	"3)")   
-	        sudo apt install -y intel-microcode
-        ;;
-
-	"4)")   
-	        sudo apt install -y intel-microcode nvidia-detect nvidia-driver
-        ;;
-
-	"5)")   
-            sudo reboot
-        ;;
-
-	"6)")   
-		    exit
-        ;;
-esac
 
 sudo reboot
