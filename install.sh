@@ -248,6 +248,7 @@ clear
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 # Add Software & Packages.
 # Add ROOT Level - Software & Packages.
