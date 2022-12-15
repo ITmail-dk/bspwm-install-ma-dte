@@ -146,10 +146,15 @@ echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 echo "     Add Alias to bashrc under bash_aliases config."
-touch ~/.bashrc
+
 echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bashrc
 echo 'alias vi="nvim"' >> ~/.bashrc
 echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt clean && sudo apt autoremove -y"' >> ~/.bashrc
+
+
+touch ~/.Xresources
+echo 'Xcursor.theme: Nordzy-cursors' >> ~/.Xresources
+echo 'Xcursor.size: 22' >> ~/.Xresources
 
 # Echo Nitrogen config to files.
 echo "dirs=$HOME/wallpapers/;" >> ~/.config/nitrogen/nitrogen.cfg
