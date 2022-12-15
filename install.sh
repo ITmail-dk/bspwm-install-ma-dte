@@ -132,8 +132,6 @@ cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 #cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
 
-cp ~/bspwm-install-ma-dte/local-files/.Xresources ~/
-
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 clear
