@@ -50,7 +50,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
 #sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
 
-sudo sed -i 's+deb cd-rom+#deb cd-rom+g' /etc/apt/sources.list
+sudo sed -i 's+deb cdrom+#deb cdrom+g' /etc/apt/sources.list
 
 sudo sed -i 's+deb http://deb.debian.org/debian/ testing main contrib non-free+#deb http://deb.debian.org/debian/ testing main contrib non-free+g' /etc/apt/sources.list
 sudo sed -i 's+deb-src http://deb.debian.org/debian/ testing main contrib non-free+#deb-src http://deb.debian.org/debian/ testing main contrib non-free+g' /etc/apt/sources.list
