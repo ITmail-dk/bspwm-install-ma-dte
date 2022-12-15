@@ -66,6 +66,8 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 #sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
 #sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
 
+sudo sed -i 's+deb cd-rom+#deb cd-rom+g' /etc/apt/sources.list
+
 sudo sed -i 's+deb http://deb.debian.org/debian/ testing main contrib non-free+#deb http://deb.debian.org/debian/ testing main contrib non-free+g' /etc/apt/sources.list
 sudo sed -i 's+deb-src http://deb.debian.org/debian/ testing main contrib non-free+#deb-src http://deb.debian.org/debian/ testing main contrib non-free+g' /etc/apt/sources.list
 sleep 1
@@ -316,7 +318,22 @@ sudo sed -i 's+GRUB_TIMEOUT=5+GRUB_TIMEOUT=1+g' /etc/default/grub
 
 sudo update-grub
 
-sleep 7
+clear
+
+echo " Reboot in 7..."
+sleep 1
+echo " Reboot in 6..."
+sleep 1
+echo " Reboot in 5..."
+sleep 1
+echo " Reboot in 4..."
+sleep 1
+echo " Reboot in 3..."
+sleep 1
+echo " Reboot in 2..."
+sleep 1
+echo " Reboot in 1..."
+sleep 1
 
 # END RUN ##########################################################################################################################################
 
