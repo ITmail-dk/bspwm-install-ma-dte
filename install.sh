@@ -57,36 +57,11 @@ APTSELECTED=$(whiptail --separate-output --checklist "APT Software Packages" 20 
 
 clear
 
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Enter your user password, to continue if necessary"
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-
-
-echo "$$$$$$$$\             $$\                                                                                                                                                             $$\                               "
-echo "$$  _____|            $$ |                                                                                                                                                            $$ |                              "
-echo "$$ |      $$$$$$$\  $$$$$$\    $$$$$$\   $$$$$$\        $$\   $$\  $$$$$$\  $$\   $$\  $$$$$$\         $$$$$$\   $$$$$$\   $$$$$$$\  $$$$$$$\ $$\  $$\  $$\  $$$$$$\   $$$$$$\   $$$$$$$ |                              "
-echo "$$$$$\    $$  __$$\ \_$$  _|  $$  __$$\ $$  __$$\       $$ |  $$ |$$  __$$\ $$ |  $$ |$$  __$$\       $$  __$$\  \____$$\ $$  _____|$$  _____|$$ | $$ | $$ |$$  __$$\ $$  __$$\ $$  __$$ |                              "
-echo "$$  __|   $$ |  $$ |  $$ |    $$$$$$$$ |$$ |  \__|      $$ |  $$ |$$ /  $$ |$$ |  $$ |$$ |  \__|      $$ /  $$ | $$$$$$$ |\$$$$$$\  \$$$$$$\  $$ | $$ | $$ |$$ /  $$ |$$ |  \__|$$ /  $$ |                              "
-echo "$$ |      $$ |  $$ |  $$ |$$\ $$   ____|$$ |            $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |            $$ |  $$ |$$  __$$ | \____$$\  \____$$\ $$ | $$ | $$ |$$ |  $$ |$$ |      $$ |  $$ |                              "
-echo "$$$$$$$$\ $$ |  $$ |  \$$$$  |\$$$$$$$\ $$ |            \$$$$$$$ |\$$$$$$  |\$$$$$$  |$$ |            $$$$$$$  |\$$$$$$$ |$$$$$$$  |$$$$$$$  |\$$$$$\$$$$  |\$$$$$$  |$$ |      \$$$$$$$ |$$\                           "
-echo "\________|\__|  \__|   \____/  \_______|\__|             \____$$ | \______/  \______/ \__|            $$  ____/  \_______|\_______/ \_______/  \_____\____/  \______/ \__|       \_______|$  |                          "
-echo "                                                        $$\   $$ |                                    $$ |                                                                                \_/                           "
-echo "                                                        \$$$$$$  |                                    $$ |                                                                                                              "
-echo "                                                         \______/                                     \__|                                                                                                              "
-echo "  $$\                                                     $$\     $$\                                     $$\  $$$$$$\                                                                                                  "
-echo "  $$ |                                                    $$ |    \__|                                    \__|$$  __$$\                                                                                                 "
-echo "$$$$$$\    $$$$$$\         $$$$$$$\  $$$$$$\  $$$$$$$\  $$$$$$\   $$\ $$$$$$$\  $$\   $$\  $$$$$$\        $$\ $$ /  \__|      $$$$$$$\   $$$$$$\   $$$$$$$\  $$$$$$\   $$$$$$$\  $$$$$$$\  $$$$$$\   $$$$$$\  $$\   $$\ "
-echo "\_$$  _|  $$  __$$\       $$  _____|$$  __$$\ $$  __$$\ \_$$  _|  $$ |$$  __$$\ $$ |  $$ |$$  __$$\       $$ |$$$$\           $$  __$$\ $$  __$$\ $$  _____|$$  __$$\ $$  _____|$$  _____| \____$$\ $$  __$$\ $$ |  $$ |"
-echo "  $$ |    $$ /  $$ |      $$ /      $$ /  $$ |$$ |  $$ |  $$ |    $$ |$$ |  $$ |$$ |  $$ |$$$$$$$$ |      $$ |$$  _|          $$ |  $$ |$$$$$$$$ |$$ /      $$$$$$$$ |\$$$$$$\  \$$$$$$\   $$$$$$$ |$$ |  \__|$$ |  $$ |"
-echo "  $$ |$$\ $$ |  $$ |      $$ |      $$ |  $$ |$$ |  $$ |  $$ |$$\ $$ |$$ |  $$ |$$ |  $$ |$$   ____|      $$ |$$ |            $$ |  $$ |$$   ____|$$ |      $$   ____| \____$$\  \____$$\ $$  __$$ |$$ |      $$ |  $$ |"
-echo "  \$$$$  |\$$$$$$  |      \$$$$$$$\ \$$$$$$  |$$ |  $$ |  \$$$$  |$$ |$$ |  $$ |\$$$$$$  |\$$$$$$$\       $$ |$$ |            $$ |  $$ |\$$$$$$$\ \$$$$$$$\ \$$$$$$$\ $$$$$$$  |$$$$$$$  |\$$$$$$$ |$$ |      \$$$$$$$ |"
-echo "   \____/  \______/        \_______| \______/ \__|  \__|   \____/ \__|\__|  \__| \______/  \_______|      \__|\__|            \__|  \__| \_______| \_______| \_______|\_______/ \_______/  \_______|\__|       \____$$ |"
-echo "                                                                                                                                                                                                              $$\   $$ |"
-echo "                                                                                                                                                                                                              \$$$$$$  |"
-echo "                                                                                                                                                                                                               \______/ "
-
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
+echo " "
+echo "     Enter your user password, to continue if necessary"
+echo " "
+echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 
 #sudo sh -c "echo 'Xcursor.theme: Nordzy-cursors' >> /etc/X11/Xresources/x11-common"
 #sudo sh -c "echo 'Xcursor.size: 22' >> /etc/X11/Xresources/x11-common"
@@ -309,7 +284,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sudo apt update
 
 # Core packages to be installed ############################################################################################################################################
-sudo apt install -m -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer bluez bluez-firmware bluez-tools bluez-alsa-utils blueman xfce4-pulseaudio-plugin moc mpv curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput jgmenu sshfs
+sudo apt install -m -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer bluez bluez-firmware bluez-tools bluez-alsa-utils blueman xfce4-pulseaudio-plugin moc mpv curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput jgmenu sshfs wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch $APTSELECTED
 
 # APT OFF
 # system-config-printer cifs-utils 
@@ -325,45 +300,10 @@ sudo apt install -y /tmp/google-chrome-stable_current_amd64.deb
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
 
-cd ~/bspwm-install-ma-dte
-
-# Not for production version
-#read -p "Troubleshooting - Press a key to continue the installation."
-
+cd ~
 
 # Add Pulseaudio to system startup as user.
 systemctl --user enable pulseaudio
-
-# Not for production version
-#read -p "Troubleshooting - Press a key to continue the installation."
-
-# Last Software & Packages. ############################################################################################################################################
-clear
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-echo " "
-echo "     Download, Building & Install Software"
-echo " "
-echo "     Enter your user password, to continue if necessary"
-echo " "
-echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-
-# Last Software & Packages
-sudo apt install -m -y wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch $APTSELECTED
-
-
-# Not for production version
-#read -p "Troubleshooting - Press a key to continue the installation."
-
-# Alacritty - Building and installing ON / OFF
-clear
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-#echo " "
-#echo "     Alacritty - Building and installing"
-#echo " "
-#echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
-
-# Alacritty - Building and installing ON / OFF
-#. ~/bspwm-install-ma-dte/install-scripts/install-alacritty-debian.sh
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
@@ -375,6 +315,8 @@ sudo Xorg -configure
 sudo sed -i 's+GRUB_TIMEOUT=5+GRUB_TIMEOUT=1+g' /etc/default/grub
 
 sudo update-grub
+
+sleep 7
 
 # END RUN ##########################################################################################################################################
 
