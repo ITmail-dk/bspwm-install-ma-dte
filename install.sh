@@ -70,10 +70,10 @@ sudo apt update && sudo apt install -y git
 case $CHOICESTART in
 	"1)")   
 	        sudo apt install -y amd64-microcode
-	;;
+		;;
 	"2)")   
             sudo apt install -y amd64-microcode nvidia-detect nvidia-driver
-	;;
+		;;
 
 	"3)")   
 	        sudo apt install -y intel-microcode
