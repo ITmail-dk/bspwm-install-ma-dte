@@ -103,5 +103,10 @@ xfce4-power-manager &
 sleep 2
 $HOME/.config/polybar/run-polybar.sh &
 
+# Run the file if it exists.
+if [ -f ~/mount_sshfs ]; then
+    . ~/mount_sshfs
+fi
+
 # lock computer automatically after X time of minutes.
 xautolock -time 120 -locker "xsecurelock" -detectsleep -secure &
