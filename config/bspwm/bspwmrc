@@ -100,9 +100,6 @@ $HOME/.config/polybar/run-polybar.sh &
 
 xfce4-power-manager &
 
-sleep 2
-$HOME/.config/polybar/run-polybar.sh &
-
 # Run the file if it exists.
 if [ -f ~/mount_sshfs ]; then
     . ~/mount_sshfs
