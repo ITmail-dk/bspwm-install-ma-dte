@@ -112,7 +112,7 @@ mkdir ~/.icons
 mkdir ~/.local
 mkdir ~/.local/bin
 mkdir ~/wallpapers
-mkdir ~/miscellaneous
+
 # Set User folders via xdg-user-dirs-update.
 xdg-user-dirs-update
 
