@@ -218,12 +218,6 @@ echo "     Copy Theme files..."
 echo " "
 echo "-'-'-'-'-'-'-'-'-'-'-'-'-"
 
-#cp -r ~/bspwm-install-ma-dte/themes/themes-de/* ~/.themes/
-#cp -r ~/bspwm-install-ma-dte/themes/cursors/* ~/.icons/
-#cp -r ~/bspwm-install-ma-dte/themes/icons/* ~/.icons/
-
-cp -r ~/bspwm-install-ma-dte/themes/themes-de/* ~/.themes/
-
 mkdir ~/.icons/Nordzy-cursors
 cp -r ~/bspwm-install-ma-dte/themes/cursors/Nordzy-cursors-theme/Nordzy-cursors/* ~/.icons/Nordzy-cursors
 
@@ -274,9 +268,11 @@ sudo apt install -m -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polyb
 
 # APT OFF
 # system-config-printer cifs-utils 
+clear
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 # Google Chrome - Download + Install  ON / OFF
 #rm google-chrome-stable_current_amd64.deb
@@ -285,6 +281,7 @@ sudo apt install -y /tmp/google-chrome-stable_current_amd64.deb
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
+clear
 
 cd ~
 
@@ -302,6 +299,8 @@ sudo sed -i 's+GRUB_TIMEOUT=5+GRUB_TIMEOUT=1+g' /etc/default/grub
 
 sudo update-grub
 
+# Not for production version
+#read -p "Troubleshooting - Press a key to continue the installation."
 clear
 
 echo " Reboot in 7..."
