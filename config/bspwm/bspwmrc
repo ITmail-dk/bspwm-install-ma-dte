@@ -28,6 +28,13 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 #bspc config -m DP-2 top_padding 28
 #bspc config -m DP-7 top_padding 0
 
+# Startup
+xsetroot -cursor_name left_ptr &
+
+pkill picom &
+sleep 1 &
+picom -b --vsync --experimental-backends &
+
 # BSPwm - Setting.
 bspc config border_width 1
 bspc config normal_border_color 	"#0A1B2A"
@@ -88,13 +95,8 @@ bspc rule -a LibreCAD desktop=7 follow=on border=off
 bspc rule -a mpv state=fullscreen border=off
 
 
-# Automatically start up programs.
-xsetroot -cursor_name left_ptr &
+# Automatically startup.
 nitrogen --restore &
-
-pkill picom
-sleep 1
-picom -b --experimental-backends &
 
 $HOME/.config/polybar/run-polybar.sh &
 
