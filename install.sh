@@ -37,22 +37,6 @@ whiptail --title "The installation of Martin BSPwm DTE on Debian" --menu "Choose
 	"5)" "Virtual Machine System - NO microcode or GPU Drivers" \
 	"6)" "Exit, Do nothing" 3>&2 2>&1 1>&3)
 
-# APTSELECTED MENU ############################################################################################################################################
-
-APTSELECTED=$(whiptail --separate-output --checklist "APT Software Packages" 20 80 10 \
-  "filezilla" "Free FTP solution" OFF \
-  "notepadqq" "A text editor for developers" OFF \
-  "librecad" "Open Source CAD application" OFF \
-  "inkscape" "vector graphics software" OFF \
-  "gimp" "Image Manipulation Program" OFF \
-  "rawtherapee" "Raw image processing program" OFF \
-  "darktable" "Lighttable & Darkroom for photographers" OFF \
-  "okular" "The Universal Document Viewer" OFF \
-  "scribus" "Open Source Desktop Publishing" OFF \
-  "obs-studio" "Open Broadcaster Software" OFF 3>&1 1>&2 2>&3)
-
-# LIST filezilla notepadqq gigolo netdiscover librecad inkscape gimp rawtherapee darktable okular scribus obs-studio
-
 # START RUN ############################################################################################################################################
 
 clear
@@ -286,7 +270,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sudo apt update
 
 # Core packages to be installed ############################################################################################################################################
-sudo apt install -m -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer bluez bluez-firmware bluez-tools bluez-alsa-utils blueman xfce4-pulseaudio-plugin moc mpv curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput jgmenu sshfs wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch $APTSELECTED
+sudo apt install -m -y xorg arandr autorandr dialog bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager git kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer bluez bluez-firmware bluez-tools bluez-alsa-utils blueman xfce4-pulseaudio-plugin moc mpv curl tmux imagemagick sxiv scrot flameshot firefox-esr numlockx ranger neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput jgmenu sshfs wireguard qimgv libreoffice libreoffice-gtk3 libreoffice-l10n-da freerdp2-x11 freerdp2-shadow-x11 speedcrunch
 
 # APT OFF
 # system-config-printer cifs-utils 
