@@ -2,6 +2,15 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+# Run the file if it exists.
+if [ -f ~/mount_sshfs ]; then
+    . ~/mount_sshfs
+fi
+
+if [ -f ~/.Xresources ]; then
+    xrdb ~/.Xresources
+fi
+
 #bspc monitor (-d or NAME) also the number that should be on that screen.
 #example of reverse order on screens.
 #bspc monitor Screen-1 -s Screen-2
@@ -101,11 +110,6 @@ nitrogen --restore &
 $HOME/.config/polybar/run-polybar.sh &
 
 xfce4-power-manager &
-
-# Run the file if it exists.
-if [ -f ~/mount_sshfs ]; then
-    . ~/mount_sshfs
-fi
 
 # lock computer automatically after X time of minutes.
 xautolock -time 120 -locker "xsecurelock" -detectsleep -secure &

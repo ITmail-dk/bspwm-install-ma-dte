@@ -128,6 +128,7 @@ cp -r ~/bspwm-install-ma-dte/config/* ~/.config/
 cp -r ~/bspwm-install-ma-dte/fonts/* ~/.fonts/
 #cp -r ~/bspwm-install-ma-dte/themes/* ~/.themes/
 cp -r ~/bspwm-install-ma-dte/wallpapers/* ~/wallpapers/
+cp ~/bspwm-install-ma-dte/local-files/.Xresources ~/.Xresources
 
 # Not for production version
 #read -p "Troubleshooting - Press a key to continue the installation."
@@ -145,11 +146,6 @@ echo "     Add Alias to bashrc under bash_aliases config."
 echo 'alias ls="ls --color=auto --group-directories-first -v -la"' >> ~/.bashrc
 echo 'alias vi="nvim"' >> ~/.bashrc
 echo 'alias upup="sudo apt update && sudo apt upgrade -y && sudo apt clean && sudo apt autoremove -y"' >> ~/.bashrc
-
-
-touch ~/.Xresources
-echo 'Xcursor.theme: Nordzy-cursors' >> ~/.Xresources
-echo 'Xcursor.size: 22' >> ~/.Xresources
 
 # Echo Nitrogen config to files.
 echo "dirs=$HOME/wallpapers/;" >> ~/.config/nitrogen/nitrogen.cfg
@@ -267,7 +263,7 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sudo apt update
 
 # Core packages to be installed ############################################################################################################################################
-sudo apt install -y xorg arandr autorandr bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer mpv curl tmux sxiv scrot flameshot firefox-esr numlockx neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput sshfs wireguard qimgv freerdp2-x11 freerdp2-shadow-x11 speedcrunch notepadqq
+sudo apt install -y xorg arandr autorandr bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer mpv curl tmux sxiv scrot flameshot firefox-esr numlockx neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput sshfs wireguard qimgv freerdp2-x11 freerdp2-shadow-x11 speedcrunch
 
 # APT OFF
 # system-config-printer cifs-utils 
