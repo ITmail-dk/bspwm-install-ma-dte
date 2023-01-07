@@ -263,10 +263,10 @@ echo "-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-"
 sudo apt update
 
 # Core packages to be installed ############################################################################################################################################
-sudo apt install -y xorg arandr autorandr bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer mpv curl tmux sxiv scrot flameshot firefox-esr numlockx neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput sshfs wireguard qimgv freerdp2-x11 freerdp2-shadow-x11 speedcrunch
+sudo apt install -y xorg arandr autorandr bspwm sxhkd sddm picom polybar xautolock xsecurelock network-manager kitty psmisc rofi nemo thunar pcmanfm module-assistant font-manager gvfs-backends nitrogen dunst rsync cups xsensors smbclient lxpolkit xbacklight lxappearance htop mc xarchiver pulseaudio pulsemixer mpv curl tmux sxiv scrot flameshot firefox-esr numlockx neovim notify-osd neofetch flatpak timeshift rename gparted cpufrequtils xfce4-power-manager xfce4-settings bpytop firmware-linux-nonfree nfs-common virt-viewer gvncviewer xinput sshfs
 
 # APT Packages RUN nr. 2
-sudo apt install -y policykit-1-gnome
+sudo apt install -y policykit-1-gnome wireguard qimgv freerdp2-x11 freerdp2-shadow-x11 speedcrunch
 
 # APT OFF
 # system-config-printer cifs-utils 
