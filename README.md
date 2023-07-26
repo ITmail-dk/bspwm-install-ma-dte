@@ -9,7 +9,8 @@ Start the installation as regular users with SUDO rights from your home director
 
 Debian Install ISO - Non-free Firmware download link.: 
 
-https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-cd/firmware-testing-amd64-netinst.iso
+https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/
+
 
 ### Ventoy - Create one bootable USB, with multiple ISO files on it.
 Just copy multiple ISO files to the USB drive and boot them directly, It's just such a great tool.
